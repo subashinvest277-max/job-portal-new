@@ -37,8 +37,7 @@ Flask==3.0.3
 reportlab==4.4.3
 razorpay==1.4.2
 
-google-auth==2.41.1
-google-api-python-client==2.186.0
+
 
 celery==5.5.3
 redis==6.2.0
