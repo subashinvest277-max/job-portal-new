@@ -1,0 +1,314 @@
+/* Container Layout */
+.talent-page-container {
+  max-width: 1250px;
+  margin: 10px auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #334155;
+
+  scroll-behavior: smooth;
+}
+
+/* --- Search Bar Section --- */
+.FindTalent-search-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.FindTalent-search-wrapper {
+  display: flex;
+  max-width: 700px;
+  margin: 0 auto 25px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.FindTalent-search-input {
+  flex: 1;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  color: #1e293b;
+}
+
+.FindTalent-search-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0 35px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.FindTalent-search-button:hover {
+  background-color: #1d4ed8;
+}
+
+.FindTalent-results-title {
+  font-size: 22px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* --- Main Layout --- */
+.FindTalent-layout-body {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  
+}
+
+/* --- Sidebar Styling --- */
+.FindTalent-filters-sidebar {
+  width: 280px;
+  min-width: 280px;  /* ✅ ఇది add చేయి */
+  flex-shrink: 0;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 20px;
+  
+  bottom: 20px;
+  align-self: flex-start;
+  overflow-y: auto;
+  max-height: calc(100vh - 350px);
+  overscroll-behavior: contain;
+}
+
+.FindTalent-filter-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.FindTalent-filter-label {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px 0;
+  display: inline-block;
+}
+ 
+.FindTalent-filter-label:hover {
+  color: #007bff;
+  transform: translateX(2px);
+}
+
+.FindTalent-clear-btn {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.FindTalent-filter-category {
+  margin-bottom: 25px;
+}
+
+.FindTalent-filter-category h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.FindTalent-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.FindTalent-checkbox-item input {
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+}
+
+.FindTalent-view-more-link {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin-top: 5px;
+}
+
+/* --- Talent Card (The Modern Design) --- */
+/* .FindTalent-talent-list {
+  flex: 1;
+} */
+
+.FindTalent-talent-list {
+  flex: 1;
+  min-width: 0;        
+  padding-left: 10px;  
+}
+
+.FindTalent-talent-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.FindTalent-talent-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.FindTalent-card-top {
+  display: flex;
+  justify-content: space-between; /* Parallel Name and Image */
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.FindTalent-info-area {
+  flex: 1;
+}
+
+.FindTalent-info-area h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.FindTalent-info-area h2 small {
+  font-weight: 500;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.FindTalent-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  margin-top: 15px;
+}
+
+.FindTalent-meta-grid span {
+  font-size: 13px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+}
+
+/* Image Parallel to Name */
+.FindTalent-avatar {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.FindTalent-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #f1f5f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.FindTalent-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 18px;
+  margin-top: 10px;
+}
+
+.FindTalent-timestamp {
+  font-size: 12px;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+/* Actions */
+.FindTalent-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.FindTalent-btn-save {
+  padding: 8px 18px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  color: #475569;
+}
+
+.FindTalent-btn-save:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.FindTalent-btn-view {
+  padding: 8px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.FindTalent-btn-view:hover {
+  background: #1d4ed8;
+}
+
+.FindTalent-load-more-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 40px;
+  background: white;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.FindTalent-load-more-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.FindTalent-exp-slider {
+  width: calc(100% + 0px); /* same గా ఉంచు */
+  display: block;
+  cursor: pointer;
+  accent-color: #2563eb;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0; /* ✅ ఇది add చేయి */
+}

@@ -1,0 +1,38 @@
+.revoked-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+}
+.revoked-image-container {
+    margin-bottom: 30px;
+}
+.revoked-image {
+    width: 200px;
+    height: auto;
+}
+
+.revoked-overlay{
+    margin-top: 75px;
+}
+
+.revoked-text-container {
+    max-width: 600px;
+    margin-top: 25px;
+}
+
+.revoked-title {
+    font-size: 36px;
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+.revoked-message {
+    font-size: 30px;
+    color: #032240;
+    font-weight: 500;
+    line-height: 1em;
+}

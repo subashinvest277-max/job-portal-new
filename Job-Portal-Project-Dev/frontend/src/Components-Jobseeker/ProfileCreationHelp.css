@@ -1,0 +1,157 @@
+.profilehelp-page {
+    margin-top: 102px;
+}
+ 
+.profilehelp-container {
+    background: #ffffff;
+    padding: 40px 100px 100px;
+}
+ 
+.profilehelp-title {
+    color: #0f172a;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.profilehelp-updated {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+ 
+.profilehelp-intro {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 40px;
+}
+ 
+.profilehelp-layout {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+ 
+.profilehelp-left {
+    flex: 1.2;
+    min-width: 0;
+}
+ 
+.profilehelp-right {
+    flex: 1;
+    max-width: 500px;
+}
+ 
+.profilehelp-steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+ 
+.profilehelp-steps-container h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 24px;
+    text-align: left;
+}
+ 
+.profilehelp-steps-list {
+    max-width: 100%;
+    padding-left: 24px;
+}
+ 
+.profilehelp-steps-list li {
+    font-size: 17px;
+    color: #334155;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+ 
+.profilehelp-detailed-steps {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.profilehelp-detailed-steps h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+    width: 100%;
+}
+ 
+.detailed-step {
+    margin-bottom: 30px;
+    width: 100%;
+}
+ 
+.detailed-step h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+ 
+.detailed-step h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+ 
+.detailed-step ul {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+ 
+.detailed-step li {
+    font-size: 16px;
+    color: #334155;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+ 
+.detailed-step strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+ 
+@media (max-width: 1000px) {
+    .profilehelp-container {
+        padding: 40px 30px 60px;
+    }
+ 
+    .profilehelp-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+ 
+    .profilehelp-left,
+    .profilehelp-right {
+        max-width: 100%;
+        width: 100%;
+        flex: none;
+    }
+ 
+    .profilehelp-left {
+        overflow-x: auto;
+    }
+ 
+    .profilehelp-detailed-steps {
+        margin-top: 50px;
+    }
+}
+ 

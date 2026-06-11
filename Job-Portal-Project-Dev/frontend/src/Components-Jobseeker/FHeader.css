@@ -1,0 +1,15 @@
+.Fheader-back-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.Fheader-back-btn img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease;
+}
+
+.Fheader-back-btn img:hover {
+  transform: scale(1.15);
+}

@@ -1,0 +1,369 @@
+.aboutcompany-container {
+  /* max-width: 800px; */
+  margin: 100px 100px 100px;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+ 
+.aboutcompany-title {
+  text-align: center;
+  background: #eaf2f8;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0 70px 30px;
+  font-weight: 600;
+}
+ 
+.aboutcompany-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+ 
+.aboutcompany-form-group {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.aboutcompany-form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+ 
+.aboutcompany-form-group input,
+.aboutcompany-form-group select,
+.aboutcompany-form-group textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  font-family: sans-serif;
+  outline: none;
+}
+ 
+ 
+/* .aboutcompany-form-group input, 
+
+.aboutcompany-form-group select {
+
+    padding: 10px 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    height: 45px; 
+
+    background-color: white;
+
+    appearance: none;
+
+    outline: none;
+
+    transition: border-color 0.3s ease;
+
+} */
+ 
+ 
+.aboutcompany-form-group input:focus,
+.aboutcompany-form-group textarea:focus {
+  border-color: #1e88e5;
+}
+ 
+.aboutcompany-form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+ 
+.aboutcompany-back-btn {
+  background: transparent;
+  border: none;
+  color: #1e88e5;
+  font-weight: 500;
+  cursor: pointer;
+}
+ 
+.aboutcompany-next-btn {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+ 
+.aboutcompany-next-btn:hover {
+  background: #1565c0;
+}
+ 
+.aboutcompany-file-upload-box {
+  border: 1px dashed #ccc;
+  padding: 15px;
+  border-radius: 6px;
+  background: #fafafa;
+  position: relative;
+}
+ 
+.aboutcompany-file-upload-box input {
+  margin-bottom: 10px;
+}
+ 
+.aboutcompany-file-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+ 
+.aboutcompany-file-preview img {
+  width: 40px;
+}
+ 
+.aboutcompany-upload-placeholder {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+}
+ 
+.aboutcompany-file-preview {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+ 
+.aboutcompany-file-left {
+  display: flex;
+  align-items: center;   /* <-- alignment fix */
+  gap: 14px;
+  flex: 1;
+}
+
+.aboutcompany-file-left img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.aboutcompany-file-left div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutcompany-file-left p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.aboutcompany-file-left span {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #666;
+}
+ 
+.aboutcompany-clickable-area {
+  cursor: pointer;
+}
+
+.aboutcompany-save-btn {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.aboutcompany-save-btn:hover,.aboutcompany-discard-btn {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.aboutcompany-discard-btn {
+  background: #e84444;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-left: 20px;
+  width: max-content;
+}
+
+.popup-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 450px;
+  max-width: 90%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.popup-modal-header h3 {
+  margin: 0;
+  color: #d32f2f;
+  font-size: 20px;
+}
+
+.popup-modal-body {
+  padding: 24px;
+}
+
+.popup-modal-body p {
+  margin: 10px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+.popup-modal-body strong {
+  color: #1e88e5;
+}
+
+.popup-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.popup-btn-cancel {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.popup-btn-cancel:hover {
+  background: #f5f5f5;
+}
+
+.popup-btn-confirm {
+  padding: 10px 20px;
+  background: #1e88e5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: all 0.2s;
+}
+
+.popup-btn-confirm:hover {
+  background: #1565c0;
+}
+
+.upload-box{
+  border:1px dashed #ccc;
+  padding:20px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+
+.file-card{
+  border:1px solid #ddd;
+  border-radius:8px;
+  padding:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:relative;
+}
+
+.menu-wrapper{
+  position:relative;
+}
+
+
+.dots-btn{
+  border:none;
+  background:none;
+  font-size:20px;
+  cursor:pointer;
+}
+
+
+.file-menu{
+  position:absolute;
+  right:0;
+  top:35px;
+  background:white;
+  border:1px solid #ddd;
+  border-radius:6px;
+  min-width:100px;
+  z-index:100;
+}
+
+
+.file-menu button{
+  width:100%;
+  padding:10px;
+  border:none;
+  background:white;
+  cursor:pointer;
+  text-align:left;
+}
+
+
+.file-menu button:hover{
+  background: #a5a5a5;
+}
+
+.file-menu button:last-child:hover{
+  background: #fff1f1;
+  color: #e53935;
+}
+

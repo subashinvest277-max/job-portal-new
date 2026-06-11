@@ -1,0 +1,300 @@
+.otp-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.success-popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: auto;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    animation: otpSuccessPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.otp-modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
+
+.otp-modal-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.otp-modal-content p :not(.error-msg-otp) {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+.error-msg-otp {
+    color: #d93025;
+    font-size: 16px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* FIXED: Proper 6-digit OTP input styling */
+.otp-input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    overflow: visible;
+}
+
+.otp-input-group input {
+    flex: 0 0 auto;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.otp-input-group input:focus {
+    border-color: #0081FF;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(0, 129, 255, 0.2);
+}
+
+.otp-input-group input::-webkit-outer-spin-button,
+.otp-input-group input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Ensure all 6 digits are visible */
+.otp-input-group input:not(:last-child) {
+    margin-right: 0;
+}
+
+.resend-timer {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #888;
+}
+
+.blue-text {
+    color: #0081FF;
+    font-weight: 600;
+}
+
+.verify-final-btn {
+    width: 100%;
+    background-color: #0081FF;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.verify-final-btn:hover {
+    background-color: #0069d1;
+}
+
+.verify-final-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.switch-method {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+}
+
+.verified-badge {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.otp-icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.otp-status-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.otp-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.success-popup-style {
+    min-width: 450px;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    animation: otpSuccessPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.verified-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.verified-popup-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+@keyframes otpSuccessPop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive for tablet */
+@media (max-width: 550px) {
+    .otp-modal-content {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .otp-input-group {
+        gap: 8px;
+    }
+
+    .otp-input-group input {
+        width: 42px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+/* Responsive for mobile - ensures all 6 digits fit */
+@media (max-width: 450px) {
+    .otp-modal-content {
+        width: 95%;
+        padding: 25px 15px;
+    }
+
+    .otp-input-group {
+        gap: 6px;
+    }
+
+    .otp-input-group input {
+        width: 38px;
+        height: 42px;
+        font-size: 16px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 380px) {
+    .otp-input-group {
+        gap: 4px;
+    }
+
+    .otp-input-group input {
+        width: 34px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* Back button positioning fix */
+.back-arrow {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Expired state styling */
+.expired-state {
+    text-align: center;
+}
+
+.expired-state p {
+    margin: 10px 0;
+}
+
+/* Resend link styling */
+.resend-link {
+    cursor: pointer;
+    color: #0081FF;
+    font-weight: bold;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}

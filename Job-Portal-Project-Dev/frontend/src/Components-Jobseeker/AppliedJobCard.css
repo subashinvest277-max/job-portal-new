@@ -1,0 +1,141 @@
+.myjobs-job-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+  max-width: 720px;
+}
+
+.myjobs-job-card:hover {
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.myjobs-card-header {
+  margin-bottom: 6px;
+}
+
+.myjobs-job-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Company Row */
+.myjobs-company-name {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star img {
+  width: 14px;
+  height: 14px;
+}
+
+/* Details */
+/* .Opportunities-job-details {
+  margin-top: 10px;
+} */
+
+/* .Opportunities-detail-line {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0;
+} */
+
+.card-icons {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+/* Tags */
+.Opportunities-job-tags {
+  margin-top: 10px;
+}
+
+.Opportunities-job-tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #eef2ff;
+  color: #2563eb;
+  margin-right: 6px;
+}
+
+/* Divider */
+.Opportunities-separator {
+  margin: 14px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* Footer */
+.Opportunities-job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.applied-app-status-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.myjobs-saved-date {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Status Badge */
+.applied-application-status {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Yellow badge */
+.status-applied,
+.status-hiring_in_progress,
+.status-hiring in progress {
+  background: #facc15;
+  color: #000;
+}
+
+/* Reviewing Application - Purple */
+.status-reviewing_application {
+  background: #E1BEE7;
+  color: #032240;
+}
+ 
+/* Hiring Done - Green */
+.status-hiring_done {
+  background: #4CAF50;
+  color: #FFFFFF;
+}
+
+/* Blue button */
+.myjobs-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.myjobs-btn:hover {
+  background: #1e4fd8;
+}

@@ -1,0 +1,307 @@
+
+.Livechat-chat-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 102px;
+}
+
+.Livechat-chat-box {
+  width: 700px;
+  height: 480px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.Livechat-start-card {
+  margin: 16px;
+  height: 60px;
+  border-radius: 12px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #0f172a;
+}
+
+.Livechat-start-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #fcfcfc;
+}
+
+.Livechat-start-card button {
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  display: flex;
+  gap: 6px;
+  font-size: large;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Livechat-chat-body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background: #f4f6f8;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Livechat-chat-spacer {
+  flex: 1;
+}
+
+.Livechat-chat-msg {
+  max-width: 65%;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.Livechat-chat-msg.bot {
+  background: #fff3cd;
+  align-self: flex-start;
+}
+
+.Livechat-chat-msg.user {
+  background: #cfe2ff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.Livechat-chat-input {
+  margin: 16px;
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  background: #0f172a;
+  border-radius: 12px;
+}
+
+.Livechat-chat-input input {
+  flex: 1;
+  padding: 8px;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #0f172a;
+  background: #0f172a;
+}
+
+.Livechat-chat-input button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  gap: 6px;
+  font-size: large;
+  background: #0b5ed7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Livechat-send-icon{
+  width: 20px;
+  height: 20px;
+}
+
+.Livechat-end-btn {
+  background: #dc3545 !important;
+}
+
+.Livechat-chat-complete {
+  margin-top: 12px;
+  padding: 12px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+
+.Livechat-chat-end-bar {
+  margin: 16px;
+  height: 60px;
+  border-radius: 12px;
+  border-top: 1px solid #ccc;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 16px;
+
+  background: #0f172a;
+}
+
+.Livechat-chat-end-bar button {
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  display: flex;
+  gap: 6px;
+  font-size: large;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.Livechat-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: grid;
+  place-items: center;
+}
+
+.Livechat-modal {
+  width: 360px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.Livechat-stars {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Livechat-star img {
+  width: 28px;   
+  height: 28px;
+  transition: transform 0.2s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.Livechat-star:hover img {
+  transform: scale(1.15);
+}
+
+
+.Livechat-modal textarea {
+  width: 300px;
+  margin: 12px 0;
+  height: 80px;
+}
+
+.Livechat-modal button {
+  background: orange;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Livechat-chat-msg.typing {
+  width: 60px;
+  background: #fff3cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.Livechat-dot {
+  width: 8px;
+  height: 8px;
+  background: #999;
+  border-radius: 50%;
+  animation: blink 1.4s infinite both;
+}
+
+.Livechat-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.Livechat-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .Livechat-chat-wrapper {
+    padding-top: 72px;
+    margin-top: 0;
+  }
+
+  .Livechat-chat-box {
+    width: 100%;
+    height: calc(100vh - 90px);
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding: 0 20px;
+  }
+
+  .Livechat-start-card,
+  .Livechat-chat-end-bar {
+    margin: 12px;
+    height: auto;
+    padding: 12px;
+  }
+
+  .Livechat-start-card p {
+    font-size: 13px;
+  }
+
+  .Livechat-start-card button,
+  .Livechat-chat-end-bar button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .Livechat-chat-body {
+    padding: 12px;
+  }
+
+  .Livechat-chat-msg {
+    max-width: 85%;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .Livechat-chat-input {
+    margin: 12px;
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .Livechat-chat-input input {
+    font-size: 14px;
+  }
+
+  .Livechat-chat-input button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .Livechat-send-icon {
+    width: 18px;
+    height: 18px;
+  }
+}

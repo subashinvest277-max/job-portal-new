@@ -1,0 +1,137 @@
+
+.app {
+    font-family: 'Arial', sans-serif;
+    background-color: #fcfcfc;
+    min-height: 100vh;
+}
+
+.JSettings-header-box {
+    text-align: center;
+    background-color: #f8fbff;
+    padding: 20px;
+    margin: 120px 45px 0 45px;
+    border-radius: 8px;
+}
+
+.JSettings-header-box h2 {
+    color: #2d4a6b;
+    margin: 0;
+    font-size: 24px;
+}
+
+.JSettings-main-layout {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.JSettings-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.JSettings-sidebar button {
+    padding: 15px 20px;
+    text-align: left;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.JSettings-sidebar button.active {
+    background-color: #e8f2ff;
+    border-color: #c2d9ff;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+
+.JSettings-content {
+    flex: 3;
+}
+
+
+.privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.privacy h2 {
+    font-size: 18px;
+    color: #1a3a5a;
+    margin-bottom: 10px;
+}
+
+.privacy p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.privacy > div, 
+.privacy {
+    background: white;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.Opportunities-separator {
+    border: 0;
+    border-top: 1px solid #f0f0f0;
+    margin: 20px 0;
+}
+
+
+.JSettings-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.JSettings-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.JSettings-btn-group button {
+    padding: 8px 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.JSettings-active-btn {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+}
+
+.JSettings-flat-btn {
+    background: white;
+    color: #333;
+}

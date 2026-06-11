@@ -1,0 +1,21 @@
+.Admin-Reports-Overview{
+ display: grid;
+ grid-template-columns: repeat(5,1fr);
+ justify-content: center;
+ gap: 5px;
+}
+
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-text {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 500;
+}
+

@@ -1,0 +1,387 @@
+.toggle-AdminSettings-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1px 0;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.Ad-Settings-select.Ad-Settings-active {
+  color: #fff;
+  border: 1px solid #1E88E5; 
+  background-color: #1E88E5;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 300px;
+
+}
+.Ad-Settings-select {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #1E88E5; 
+  position: relative;
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15) ;
+}
+
+
+.Adm-Not-container {
+  padding: 16px;
+  color: #333;
+}
+
+.Adm-Not-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.Adm-Not-header-text {
+  flex: 1;
+}
+
+.Adm-Not-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Adm-Not-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+  color: #757575;
+}
+
+.Adm-Not-save-btn {
+  background-color: #624bff; /* Matching the purple save button */
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  transition: background-color 0.2s;
+}
+
+.Adm-Not-save-btn:hover {
+  background-color: #5239e0;
+}
+
+/* Main Content Layout */
+.Adm-Not-main-content {
+  display: flex;
+  gap: 24px;
+  padding-top: 24px;
+  align-items: flex-start;
+}
+
+/* Table Section */
+.Adm-Not-table-section {
+  flex: 1;
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Very light shadow per screenshot */
+  border: 1px solid #f1f1f1; /* And a very subtle border */
+}
+
+.Adm-Not-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Adm-Not-th-type,
+.Adm-Not-th-channel {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: #424242;
+  font-size: 0.95rem;
+}
+
+.Adm-Not-th-type {
+  width: 40%;
+}
+
+.Adm-Not-th-channel {
+  text-align: center;
+}
+
+.Adm-Not-row td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.Adm-Not-row:last-child td {
+  border-bottom: none;
+}
+
+.Adm-Not-type-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.Adm-Not-type-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.Adm-Not-item-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #111;
+}
+
+.Adm-Not-item-desc {
+  font-size: 0.8rem;
+  color: #757575;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.Adm-Not-td-switch {
+  text-align: center;
+}
+
+.Adm-Not-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+}
+
+.Adm-Not-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.Adm-Not-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.Adm-Not-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.Adm-Not-switch input:checked + .Adm-Not-slider {
+  background-color: #624bff; 
+}
+
+.Adm-Not-switch input:checked + .Adm-Not-slider:before {
+  transform: translateX(22px);
+}
+
+
+.Adm-Not-sidebar {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Adm-Not-panel {
+  background-color: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.Adm-Not-panel-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.Adm-Not-panel-subtitle {
+  margin: 4px 0 16px 0;
+  font-size: 0.85rem;
+  color: #757575;
+}
+
+.Adm-Not-channel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Adm-Not-channel-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.Adm-Not-item-info {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.Adm-Not-item-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.Adm-Not-time-inputs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.Adm-Not-time-group {
+  flex: 1;
+}
+
+.Adm-Not-time-group label {
+  display: block;
+  font-size: 0.75rem;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.Adm-Not-time-select-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Adm-Not-input-icon {
+    position: absolute;
+    left: 10px;
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+}
+
+.Adm-Not-time-select {
+  width: 100%;
+  padding: 10px 12px 10px 32px; 
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.Adm-Not-day-picker {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.Adm-Not-day-btn {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+}
+
+.Adm-Not-day-btn-active {
+  background-color: #624bff;
+  color: white;
+  border-color: #624bff;
+}
+
+.Adm-Not-day-btn-weekend {
+    background-color: #fafafa;
+    color: #9e9e9e;
+    border-color: #e0e0e0;
+}
+
+.Adm-Not-timezone-select-wrapper {
+  width: 100%;
+}
+
+.Adm-Not-timezone-select {
+  width: 100%;
+  padding: 10px 12px;
+  
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #616161;
+  background-color: white;
+}
+
+.day-btn {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 10px;
+  border: none;
+  background: #f4f3f3;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #333;
+}
+ 
+.day-btn.active {
+  background-color: rgb(207, 205, 205);
+  color: rgb(11, 11, 11);
+  padding: 8px 2px;
+}
+ 
+input[type="time"]::-webkit-calendar-picker-indicator {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-image: url(../assets/left_arrow.png);
+  rotate: 90deg;
+}
+
+select{
+  appearance: none;
+  background-image: url(../assets/UpArrow.png);
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}

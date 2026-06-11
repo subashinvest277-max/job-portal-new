@@ -1,0 +1,551 @@
+.myjobs-main-info h1 {
+  color: #032240;
+}
+
+.myjobs-main-info p {
+  color: #83858B;
+}
+
+.nav-icon-active {
+  background-color: #E9F3FC;
+  height: 50px;
+  width: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-ActivityMonitor-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1px 0;
+  width: 60%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.AdminActivity-select {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #032240; 
+  position: relative;
+  padding: 6px 12px;
+}
+
+.AdminActivity-select.active {
+  color: #1E88E5; 
+}
+
+.AdminActivity-select.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: #1E88E5; 
+}
+
+/* ==========================================================================
+   Top Grid: Admin Activity Monitoring Cards
+   ========================================================================== */
+.Admin-Monitor-Overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.admin-card-container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.admin-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0px;
+}
+
+.admin-card-title {
+  color: #002b49;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.admin-divider {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  margin: 12px 0;
+}
+
+.admin-stats-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.admin-stat-item {
+  flex: 1;
+}
+
+.admin-stat-value-group {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.admin-stat-number {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #002b49;
+}
+
+.admin-stat-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+.admin-progress-bar {
+  height: 6px;
+  background-color: #e2e8f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.admin-progress-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.admin-bg-green { background-color: #28a745; }
+.admin-bg-red { background-color: red; }
+.admin-bg-yellow { background-color: #ffc107; }
+
+/* ==========================================================================
+   Lower Cards: Platform Activity & Job Communication Layout Cleanups
+   ========================================================================== */
+
+/* Overrides structural row containers safely without JSX class rules */
+p + div[style*="display: flex"] {
+  display: flex !important;
+  gap: 20px !important;
+  width: 100% !important;
+  margin-bottom: 30px !important;
+}
+
+/* Enforces uniform column sizes and baseline card behaviors */
+p + div[style*="display: flex"] > div[style*="box-shadow"] {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #fff !important;
+  min-height: 235px !important; /* Locks identical visual height across rows */
+}
+
+/* Formats card headers consistently */
+p + div[style*="display: flex"] h4 {
+  font-size: 16px !important;
+  color: #032240 !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  padding: 14px !important;
+  text-align: center !important;
+}
+
+/* Normalizes list items wrapper element padding */
+p + div[style*="display: flex"] > div > div[style*="padding"] {
+  padding: 12px 16px !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2px !important;
+}
+
+/* Flattens irregular horizontal blocks to display cleanly from the far-left position */
+p + div[style*="display: flex"] div[style*="justify-content: space-between"] {
+  padding: 10px 4px !important;
+  border-bottom: 1px solid #f3f4f6 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+p + div[style*="display: flex"] div[style*="justify-content: space-between"]:last-child {
+  border-bottom: none !important;
+}
+
+/* Forces inner vector groupings to start directly on the left border */
+p + div[style*="display: flex"] div[style*="display: flex"][style*="gap"] {
+  gap: 12px !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+
+/* Fixes individual text elements within list blocks to read clean from left-to-right */
+p + div[style*="display: flex"] p {
+  margin: 0 !important;
+  text-align: left !important;
+  font-size: 14px !important;
+  color: #1a3353 !important;
+  font-weight: 500 !important;
+}
+
+/* Cleans up the absolute title string container layout hidden inside your Application card */
+p + div[style*="display: flex"] p[style*="font-weight: \"500\""],
+p + div[style*="display: flex"] p[style*="font-weight:500"] {
+  padding: 10px 4px !important;
+  margin: 0 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: #032240 !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+/* Normalizes bullet sizes and alignment adjustments for the plain raw array list cards */
+p + div[style*="display: flex"] span[style*="font-size: 20px"] {
+  font-size: 16px !important;
+  margin-right: 4px !important;
+}
+
+/* Responsive adjustment for clean tablet display tracking stacks */
+@media (max-width: 1024px) {
+  .Admin-Monitor-Overview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  p + div[style*="display: flex"] {
+    flex-direction: column !important;
+  }
+}
+
+/* ==========================================================================
+   Company Approvals Data Sheet & Dropdowns
+   ========================================================================== */
+.C-Approval-title {
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.C-Approval-table-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.C-Approval-header-row, 
+.C-Approval-data-row {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.C-Approval-header-row {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.C-Approval-data-row {
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.C-Approval-col {
+  flex: 1;
+  padding: 15px 10px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.C-Approval-header-row .C-Approval-col {
+  font-weight: 600;
+  color: #333;
+  padding: 20px 10px;
+}
+
+.C-Approval-name {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.C-Approval-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.C-Approval-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+
+.C-Approval-badge-yes {
+  background-color: #85e8ac;
+  color: #1b5e20;
+  padding: 6px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.C-Approval-badge-no {
+  background-color: #f98b7f;
+  color: #b71c1c;
+  padding: 6px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.C-Approval-Verified {
+  background-color: #85e8ac;
+  color: #1b5e20;
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 6px 10px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #1b5e20;
+  min-width: 75px;
+}
+
+.C-Approval-Hold {
+  background-color: #FFF8E1;
+  color: #F57F17;
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 6px 10px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #F57F17;
+  min-width: 75px;
+}
+
+.C-Approval-Reject {
+  background-color: #FFEBEE;
+  color: #C62828;
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 6px 10px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #C62828;
+  min-width: 75px;
+}
+
+.C-Approval-Pending {
+  background-color: #bcd8f5;
+  color: #1E88E5;
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 6px 10px;
+  text-align: center;
+  display: inline-block;
+  border: 0.1px solid #1E88E5;
+  min-width: 75px;
+}
+
+.C-Approval-dots {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.C-Approval-dropdown {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  min-width: 110px;
+}
+
+.C-Approval-dropdown div {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  overflow: hidden;
+  text-align: left;
+}
+
+.C-Approval-dropdown div:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+
+
+.company-details-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.company-details-modal {
+  width: min(760px, 95vw);
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.25);
+}
+
+.company-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.company-details-header h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.company-details-header button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #111827;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.company-details-header button:hover {
+  background: #e5e7eb;
+}
+
+.company-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 24px;
+}
+
+.company-details-grid div {
+  min-width: 0;
+}
+
+.company-details-grid span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.company-details-grid p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #111827;
+  word-break: break-word;
+}
+
+.company-details-full {
+  grid-column: 1 / -1;
+}
+
+.company-details-logo {
+  display: block;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.company-details-loading {
+  color: #374151;
+  font-weight: 500;
+}
+
+.company-details-error {
+  color: #dc2626;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .company-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .company-details-modal {
+    padding: 18px;
+  }
+}
+
+.company-details-section-title {
+  margin: 24px 0 16px;
+  padding-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.company-details-section-title:first-of-type {
+  margin-top: 0;
+}
+
+.company-details-link {
+  display: inline-block;
+  color: #0d6efd;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.company-details-link:hover {
+  text-decoration: underline;
+}

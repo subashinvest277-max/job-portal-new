@@ -1,0 +1,72 @@
+.Admin-overview-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Admin-overview-title {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.Admin-divider {
+  border: 0;
+  border-top: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.Admin-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Admin-total-count {
+  font-size: 28px;
+  font-weight: bold;
+  fill: #333;
+}
+
+.Admin-total-label {
+  font-size: 12px;
+  fill: #888;
+}
+
+.Admin-chart-segment {
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.Admin-legend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px 15px;
+}
+
+.Admin-legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.Admin-dot {
+  width: 12px;
+  height: 8px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.Admin-label-text {
+  color: #666;
+  margin-right: 4px;
+  padding-left: 4px
+}
+
+.Admin-label-value {
+  font-weight: bold;
+  color: #222;
+}

@@ -1,0 +1,278 @@
+/* EditJob.css / PostJobForm.css */
+
+.jobpost-page-title {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFCFF; /* Optional background tint */
+}
+
+.jobpost-form-header {
+    text-align: center;
+    padding: 110px 0 60px;
+}
+
+.jobpost-form-header h1 {
+    font-size: 32px;
+    color: #0F2A4A;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.jobpost-form-header p {
+    color: #8C95A1;
+    font-size: 14px;
+}
+
+.jobpost-form-container {
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 12px;
+    padding: 40px 60px 20px 60px; 
+    max-width: 1000px;
+    margin: 0 auto 20px; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+/* Row Alignment */
+.jobpost-form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center; 
+}
+
+.jobpost-form-row.jobpost-top-align {
+    align-items: flex-start; 
+}
+
+.jobpost-label {
+    flex: 0 0 160px; 
+    font-size: 14px;
+    color: #8C95A1;
+    font-weight: 600;
+}
+
+.jobpost-top-align .jobpost-label {
+    padding-top: 12px; 
+}
+
+/* Form Controls */
+.jobpost-input,
+.jobpost-dropdown-trigger,
+.jobpost-inline-group,
+.jobpost-radio-container {
+    flex: 1;
+    height: 44px;
+    box-sizing: border-box;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.jobpost-input {
+    padding: 12px 16px;
+    color: #333333;
+}
+
+.jobpost-input:focus, .jobpost-textarea:focus {
+    border-color: #2D9CDB;
+}
+
+/* Multi-Select Dropdown Logic */
+.jobpost-dropdown {
+    flex: 1;
+    position: relative;
+    width: 100%;
+}
+
+.jobpost-dropdown-trigger {
+    padding: 12px 16px;
+    color: #A0AAB5;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.jobpost-dropdown.jobpost-is-active .jobpost-dropdown-trigger {
+    border-color: #2D9CDB;
+    box-shadow: 0 0 0 4px rgba(45, 156, 219, 0.1);
+}
+
+.jobpost-arrow {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.jobpost-is-active .jobpost-arrow {
+    transform: rotate(180deg);
+}
+
+.jobpost-dropdown-panel {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.jobpost-is-active .jobpost-dropdown-panel {
+    display: block;
+}
+
+.jobpost-options-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.jobpost-option-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #4B5563;
+    cursor: pointer;
+}
+
+.jobpost-option-item input[type="checkbox"] {
+    accent-color: #2D9CDB;
+}
+
+/* Work Type & Shift Groups */
+.jobpost-inline-group {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 16px; 
+    align-items: center;
+}
+
+.jobpost-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    font-size: 14px;
+    color: #A0AAB5;
+    cursor: pointer;
+}
+
+/* Skills & Tags */
+.jobpost-skills-titile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-input {
+    border-radius: 6px 6px 0 0 !important;
+}
+
+.jobpost-tags-area {
+    background-color: #F3F4F6;
+    border: 1px solid #E5E7EB;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    padding: 10px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.jobpost-tag {
+    background-color: #6B7280;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.jobpost-tag button {
+    background: none;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* Dynamic Fields (Highlights/Responsibilities) */
+.highlights-container, .responsibilities-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    flex: 1; 
+}
+
+.jobpost-input-icon-titile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.jobpost-plus-icon {
+    position: absolute;
+    right: 16px;
+    font-size: 20px;
+    color: #2D9CDB;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Textarea */
+.jobpost-textarea {
+    min-height: 140px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+/* Footer Actions */
+.jobpost-actions {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0 80px;
+}
+
+.jobpost-btn-cancel, .jobpost-btn-preview {
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    width: 200px;
+    transition: 0.2s;
+}
+
+.jobpost-btn-cancel {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    color: #333333;
+}
+
+.jobpost-btn-preview {
+    background: #2D9CDB;
+    border: none;
+    color: #FFFFFF;
+}
+
+.jobpost-btn-preview:hover {
+    background: #2582EB;
+}

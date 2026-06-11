@@ -1,0 +1,281 @@
+.apply-form-page {
+  background: #f4f6f8;
+  min-height: 100vh;
+  padding: 10% 0 40px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+.apply-form-job-header {
+  max-width: 900px;
+  margin: 0 auto 22px;
+  align-items: center;
+}
+
+.apply-form-job-title{
+  font-size: 26px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.apply-form-job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.apply-form-company-name {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.apply-form-job-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.apply-form-card-icons {
+  height: 16px;
+  /* margin-right: 7px; */
+}
+
+
+.apply-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.apply-form-card {
+  width: 900px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+
+.apply-form-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.apply-form-label {
+  width: 25%;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.apply-form-input,
+.apply-form-info-box {
+  width: 65%;
+  box-sizing: border-box;
+}
+
+.apply-form-edit {
+  width: 10%;
+  padding-top: 9px;
+  padding-left: 5px;
+}
+
+.apply-form-edit img {
+  width: 16px;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.apply-form-edit img:hover {
+  opacity: 1;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.cover-textarea {
+  width: 100%;
+  min-height: 120px;
+  max-height: 400px;
+  resize: vertical;
+  padding: 12px 12px; 
+  font-size: 14px;
+  line-height: 1.6;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+
+.cover-textarea:focus {
+  border-color: #131416;
+  box-shadow: 0 0 0 1px #101011;
+}
+
+.apply-form-text-input,
+.apply-form-select-input,
+.apply-form-file-input {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid #cfd4da;
+  box-sizing: border-box;
+}
+
+.apply-form-text-input:disabled,
+.apply-form-select-input:disabled {
+  background: #f1f3f5;
+}
+
+.mb {
+  margin-bottom: 8px;
+}
+
+
+.apply-form-info-box {
+  background: #f2f4f7;
+  padding: 16px 18px;        
+  border-radius: 10px;
+  font-size: 13px;
+  min-height: 120px;
+  box-sizing: border-box;
+}
+
+
+.apply-form-info-box > div {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+
+.apply-form-info-box strong {
+  min-width: 90px;      
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.apply-form-info-box p {
+  margin: 0px;
+  min-width: 9px;      
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.apply-form-info-box div {
+  word-break: break-word; 
+  white-space: normal;      
+}
+
+.apply-form-resume-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #cfd4da;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.apply-form-remove-btn {
+
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-form-remove-btn img {
+  width: 15px;                   
+  height: 15px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.apply-form-remove-btn:hover img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.apply-form-action-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+  justify-content: center;
+}
+
+.apply-form-primary-btn {
+  width: 120px;
+  height: 40px;
+  padding: 11px;
+  border-radius: 8px;
+  border: none;
+  font-size: 17px;
+  background: #0d6efd;
+  color: #fff;
+}
+
+.apply-form-secondary-btn {
+  width: 120px;
+  height: 40px;
+  padding: 11px;
+  border-radius: 8px;
+  border: none;
+  font-size: 17px;
+  background: rgb(244, 104, 104);
+  color: #fff;
+}
+.error-text {
+  color: #d32f2f;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  display: block;
+}
+ 
+.error-border {
+  border: 1px solid #d32f2f !important;
+  outline: none !important;
+  background-color: #fffafa !important;
+}
+
+
+@media (max-width: 768px) {
+  .apply-form-job-header {
+    padding: 22px 16px 10px;
+  }
+
+  .apply-form-job-title {
+    font-size: 22px;
+  }
+
+  .apply-form-job-meta {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+
+  .apply-form-row {
+    flex-direction: column;
+  }
+
+  .apply-form-label,
+  .apply-form-input,
+  .apply-form-info-box,
+  .apply-form-edit {
+    width: 100%;
+  }
+
+  .apply-form-edit {
+    text-align: right;
+    padding-top: 6px;
+  }
+}

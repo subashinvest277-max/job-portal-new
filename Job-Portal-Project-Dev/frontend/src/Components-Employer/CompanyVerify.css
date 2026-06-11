@@ -1,0 +1,152 @@
+
+.company-verify-container {
+  /* max-width: 800px; */
+  margin: 102px 200px 40px;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.company-verify-title {
+  text-align: center;
+  background: #eaf2f8;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 0 100px 30px;
+  font-weight: 600;
+}
+
+.company-verify-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.company-verify-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-verify-form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.company-verify-form-group input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  outline: none;
+}
+
+.company-verify-form-group input:focus {
+  border-color: #1e88e5;
+}
+
+.company-verify-input-with-btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.company-verify-input-with-btn input {
+  width: 100%;
+  padding: 10px 100px 10px 12px; 
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+}
+
+.company-small-verify-btn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.company-small-verify-btn:hover {
+  background: #1565c0;
+}
+
+
+.company-verify-file-upload-box {
+  border: 1px dashed #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fafafa;
+  text-align: center;
+  cursor: pointer;
+}
+
+.company-verify-upload-placeholder {
+  display: block;
+  padding: 20px;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.company-verify-file-preview {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.company-verify-file-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-verify-clickable-area {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.company-verify-file-preview p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.company-verify-file-preview span {
+  font-size: 12px;
+  color: #777;
+}
+
+.company-verify-file-preview img {
+  width: 40px;
+}
+
+.company-verify-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.company-main-verify-btn {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.company-main-verify-btn:hover {
+  background: #1565c0;
+}

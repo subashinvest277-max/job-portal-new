@@ -1,0 +1,486 @@
+
+.overview-job-company {
+  font-size: 16px;
+  color: #83858B;
+  text-align: left;
+}
+
+.review-divider {
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #EDEDED;
+}
+
+.jobpost-previous-preview-header {
+  background: #f0f7ff;
+  padding: 15px 200px;
+  text-align: center;
+  border-bottom: 1px solid #eef0f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  margin-bottom: 30px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.jobpost-previous-preview-header h1 {
+  font-size: 20px;
+  color: #1a2b48;
+  margin: 10;
+}
+
+.jobpost-previous-preview-content-area {
+  margin: 0 50px;
+  /* padding: 0px; */
+  flex: 1;
+}
+
+.jobpost-overview-content {
+  margin-top: 14rem;
+  margin-bottom: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.jobpost-overview-main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.jobpost-job-main {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.jobpost-previous-card {
+  background: #ffffff;
+  border: 1px solid #eef0f2;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.jobpost-previous-card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.jobpost-previous-job-title-text {
+  font-size: 22px;
+  color: #1a2b48;
+  margin: 0 0 5px 0;
+}
+
+.jobpost-previous-company-meta {
+  color: #6a737d;
+  font-size: 14px;
+}
+
+.jobpost-previous-company-logo-square {
+  width: 45px;
+  height: 45px;
+  border: 1.5px solid #007bff;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 6px;
+}
+
+.jobpost-previous-info-grid-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 0 10px;
+}
+
+.jobpost-previous-info-item-group {
+  display: flex;
+  align-items: center;
+}
+
+.jobpost-previous-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #586069;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+
+.jobpost-previous-vertical-separator {
+  width: 1px;
+  height: 16px;
+  background-color: #e1e4e8;
+  margin: 0 16px;
+}
+
+.jobpost-previous-icon {
+  /* color: #8a94a6;
+  stroke-width: 1.5px;
+  margin-right: 10px; */
+  width: 16px;
+}
+
+
+.jobpost-previous-job-type-tag {
+  border: 1.5px solid #007bff;
+  padding: 1px 14px;
+  border-radius: 20px;
+  color: #5371fa;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 12px;
+  margin: 4px;
+}
+
+
+.jobpost-previous-job-type-tag1 {
+  display: flex;
+  justify-content: flex-end;
+  color: #5371fa;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+}
+.Opportunities-job-meta1 {
+  font-size: 15px;
+  color: #83858B;
+  margin-bottom: 8px;
+  display: flex;             
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;       
+  width: 100%;  
+}
+.jobpost-previous-suggest-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 12px;
+  margin-left: auto;
+  cursor: pointer;
+  display: block;
+}
+
+
+.jobpost-previous-footer-meta-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  color: #959da5;
+  font-size: 12px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f3f5;
+}
+
+.meta-item strong {
+  color: #959da5;
+  font-weight: 400;
+}
+
+.meta-separator {
+  color: #ccc;
+}
+
+.applicant-count {
+  color: #0000004D;
+  font-weight: 600;
+}
+
+.jobpost-previous-highlights-callout {
+  background: #f0f7ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.jobpost-previous-highlights-callout h4 {
+  color: #1a2b48;
+  margin-top: 0;
+}
+
+.post-job-locationicon {
+  width: 18px;
+}
+
+
+
+.jobpost-previous-highlights-callout ul {
+  padding-left: 20px;
+  font-size: 13px;
+  color: #444;
+}
+
+.jobpost-previous-section-block h4 {
+  margin: 25px 0 10px 0;
+  font-size: 16px;
+  color: #1a2b48;
+}
+
+.jobpost-previous-description-text,
+.jobpost-previous-description-list {
+  font-size: 15px;
+  color: #83858B;
+  line-height: 1.6;
+}
+
+.jobpost-previous-skill-pill {
+  border: 1.5px solid #0000004D;
+  padding: 4px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color:#0d1b2a;
+  display: inline-block;
+  margin: 4px;
+}
+
+.jobpost-previous-meta-info-grid {
+  display: inline-block;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #83858B;
+}
+
+.jobpost-previous-footer-actions {
+  display: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.jobpost-previous-social-sharing span {
+  font-size: 14px;
+  color: #999;
+  margin-right: 10px;
+  display: block;
+}
+
+.jobpost-previous-icon-in {
+  /* color: #0077b5;
+  font-size: 22px;
+  cursor: pointer; */
+  width: 30px;
+}
+
+.jobpost-previous-icon-fb {
+  /* color: #1877f2;
+  font-size: 22px;
+  cursor: pointer; */
+  width: 30px;
+}
+
+.jobpost-previous-icon-x {
+  /* color: #000;
+  font-size: 22px;
+  cursor: pointer; */
+  width: 30px;
+}
+
+.jobpost-previous-btn-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.jobpost-previous-btn-cancel {
+  padding: 10px 60px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.jobpost-previous-btn-post {
+  padding: 10px 70px;
+  background: #ffffff;
+  border: 1px solid #2196F3;
+  color: #2196F3;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.jobpost-previous-btn-post:hover {
+  background: #f0f7ff;
+}
+
+.jobpost-previous-btn-cancel:hover {
+  background: #f8f9fa;
+}
+
+
+
+.jobpost-previous-status-container {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobpost-previous-success-msg {
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobpost-previous-success-hero-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.jobpost-previous-loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #2196F3;
+  border-radius: 50%;
+  display: inline-block;
+  animation: jobpost-previous-rotation 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+
+.jobpost-previous-success-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #1a2b48;
+}
+
+.jobpost-previous-success-subtitle {
+  font-size: 22px;
+  color: #111213;
+  font-weight: 600;
+}
+
+.jobpost-previous-error-screen {
+  padding: 50px;
+  text-align: center;
+}
+
+.highlight-badge {
+  display: inline-block;
+  background: #ffe082;
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+.highlight-limit-info {
+  margin: 15px 0;
+  text-align: left;
+  font-size: 14px;
+}
+ 
+.highlight-warning {
+  margin-top: 10px;
+  color: #d32f2f;
+  background: #fff3f3;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #f5c2c2;
+}
+
+/* 
+@media (max-width: 768px) {
+  .jobpost-form-container {
+    padding: 30px 20px;
+    margin-top: 20px;
+  }
+
+  .jobpost-form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .jobpost-label {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .jobpost-options-grid {
+    grid-template-columns: 1fr;
+    max-height: 220px;
+  }
+
+  .jobpost-grid-2-rows {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .jobpost-manual-exp-container {
+    grid-column: span 1;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jobpost-form-header {
+    padding-top: 80px;
+  }
+
+  .jobpost-form-header h1 {
+    font-size: 28px;
+  }
+
+ 
+  .jobpost-grid-2-rows, 
+  .jobpost-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+ 
+  .jobpost-actions {
+    flex-direction: column-reverse; 
+    gap: 15px;
+  }
+
+  .jobpost-btn-cancel,
+  .jobpost-btn-post {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+ */

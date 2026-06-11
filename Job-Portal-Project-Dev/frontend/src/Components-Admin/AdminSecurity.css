@@ -1,0 +1,472 @@
+.Ad-security-container {
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  padding: 20px
+}
+
+.Ad-security-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.Ad-security-title-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Ad-security-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.Ad-security-up {
+  transform: rotate(0deg);
+}
+
+.Ad-security-down {
+  transform: rotate(180deg);
+}
+
+.Ad-security-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Ad-security-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+  border-radius: 15px;
+  font-weight: 600;
+
+}
+
+.Ad-2fa-security-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 25px 5px;
+  justify-content: center;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+
+.Ad-security-input-group label {
+  font-size: 14px;
+}
+
+.Ad-security-input-group input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #fcfcfc;
+  margin-top: 10px;
+}
+
+.Ad-security-strength-meter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.Ad-security-progress-bar {
+  flex-grow: 1;
+  height: 4px;
+  background: #2563eb;
+  border-radius: 2px;
+}
+
+.Ad-security-update-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  /* width: 50%; */
+  flex: 1;
+}
+
+.Ad-security-cancel-btn {
+  background-color: #e53e3e;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  /* width: 50%; */
+}
+
+.Ad-security-strength-text {
+  font-size: 11px;
+  color: #2563eb;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
+
+.Ad-security-label-caps {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+  letter-spacing: 0.5px;
+  margin-left: 25px;
+}
+
+.Ad-security-interval-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.Ad-security-interval-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background: #f3f6f9;
+  color: #555;
+  cursor: pointer;
+}
+
+.Ad-security-interval-btn.Ad-security-active {
+  background: #eef2ff;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.Ad-security-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.Ad-2fa-content-wrapper {
+  margin-top: 15px;
+}
+
+.Ad-2fa-desc {
+  color: #475569;
+  font-size: 14px;
+  margin-bottom: 20px;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+.Ad-2fa-card-white {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #d1d5db;
+}
+
+.Ad-2fa-methods {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+}
+
+.Ad-2fa-method-box {
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+.Ad-2fa-method-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+}
+
+.Ad-2fa-card-info {
+  display: flex;
+  /* flex-direction: column;  */
+  gap: 25px;
+}
+
+.Ad-2fa-security-input-group input {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  letter-spacing: 20px;
+  padding: 25px;
+  font-size: 18px;
+}
+
+.Ad-2fa-security-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container styling without background color as requested */
+.Ad-Acc-container {
+  font-family: 'Inter', sans-serif;
+  color: #a0a0a0;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 12px;
+  max-width: 900px;
+}
+
+.Ad-Acc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.Ad-Acc-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.Ad-Acc-icon-box {
+  background-color: #ff4d6d;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Ad-Acc-title {
+  color: #0c0c0c;
+  font-size: 16px;
+  margin: 0;
+}
+
+.Ad-Acc-table-header {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.Ad-Acc-log-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.Ad-Acc-ip {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.Ad-Acc-status {
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  width: 50px;
+}
+
+.Ad-Acc-status.success,.enabled {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #81c784;
+  border: 1px solid #4caf50;
+  text-align: center;
+}
+.Ad-Acc-status.Cance {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #81c784;
+  border: 1px solid #4caf50;
+  text-align: center;
+}
+
+.Ad-Acc-status.failed,.cancelled,.disabled {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #e57373;
+  border: 1px solid #f44336;
+  text-align: center;
+}
+
+.Ad-Acc-trusted-section {
+  margin-top: 30px;
+}
+
+.Ad-Acc-sub-title {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.Ad-Acc-device-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  color: #e0e0e0;
+}
+
+.Ad-Acc-revoke-btn {
+  background: none;
+  border: none;
+  color: #ff4d6d;
+  font-size: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.Ad-Acc-revoke-btn:hover {
+  text-decoration: underline;
+}
+
+.Ad-Acc-content-wrapper {
+  margin-top: 10px;
+  padding: 15px 10px;
+
+}
+
+.Ad-Acc-col {
+  font-size: 12px;
+
+}
+
+.verify-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.otp-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp-modal-overlay input{
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 20px;
+}
+
+.otp-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.Otp-modal-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.Otp-modal-actions button:hover{
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+.Otp-Submit-Btn{
+  background: #007bff;
+  padding: 5px 12px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+.Otp-cancel-Btn{
+  background-color: #ff4d6d;
+  padding: 5px 12px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+.Ad-security-progress-bg {
+  width: 100%;
+  height: 4px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.Ad-security-progress-fill {
+  height: 100%;
+  transition: width 0.4s ease, 
+  background-color 0.4s ease;
+  flex: 1;
+}
+.strength-Text{
+  font-size: 14px;
+  text-align: center;
+}
+.Ad-security-strength-wrapper{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-right: 40px; 
+}
+
+.admin-eye-icon {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}

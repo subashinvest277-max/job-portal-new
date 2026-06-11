@@ -1,0 +1,185 @@
+/* Body Layout Container */
+.login-body {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+  min-height: calc(100vh - 100px);
+}
+
+/* Left Side: Illustration Container */
+.login-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Illustration Image */
+.login-illustration img {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+/* Right Side: OTP Section */
+.otp-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+}
+
+.otp-title {
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.otp-subtitle {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.otp-form {
+  width: 100%;
+  max-width: 420px;
+}
+
+.otp-input-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.otp-box {
+  width: 65px;
+  height: 65px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.otp-box:focus {
+  border-color: #2b8dec;
+}
+
+.otp-timer-display {
+  text-align: right;
+  font-size: 14px;
+  color: #334155;
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.otp-login-btn {
+  width: 100%;
+  background-color: #2b8dec;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.otp-resend-section {
+  margin-top: 50px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.resend-btn {
+  background: none;
+  border: none;
+  color: #ef4444; 
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.resend-btn:disabled {
+  color: #94a3b8;
+  cursor: default;
+}
+
+.back-to-login {
+  background: #f8f9fa;    
+  border: 1px solid #e0e0e0; 
+  color: #333;
+  font-size: 14px;   
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 16px;       
+  border-radius: 8px;       
+  margin-bottom: 1px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start; 
+  transition: all 0.2s ease;
+  left: 1px;
+}
+
+.back-to-login:hover {
+  background: #0081FF;      /* Changes to your theme color on hover */
+  color: white;
+  border-color: #0081FF;
+  box-shadow: 0 2px 8px rgba(0, 129, 255, 0.2);
+}
+
+.back-to-login-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+
+.expired-fade {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Style for the button when it becomes a "Resend" button */
+.resend-highlight {
+  background-color: #f8f9fa !important;
+  color: #0081FF !important;
+  border: 1px solid #0081FF !important;
+}
+
+.resend-highlight:hover {
+  background-color: #0081FF !important;
+  color: #fff !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .login-body::after {
+        display: none;
+    }
+    .login-body {
+        flex-direction: column;
+        padding: 20px;
+    }
+}

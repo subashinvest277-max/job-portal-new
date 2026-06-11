@@ -1,0 +1,152 @@
+.jobemployerhelp-page {
+    margin-top: 102px;
+    padding-bottom: 50px;
+}
+
+.jobemployerhelp-container {
+    background: #ffffff;
+    padding: 40px 100px 100px;
+}
+
+.jobemployerhelp-title {
+    color: #0f172a;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.jobemployerhelp-updated {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.jobemployerhelp-intro {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 40px;
+}
+
+.jobemployerhelp-layout {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.jobemployerhelp-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.jobemployerhelp-right {
+    flex: 1.2;
+}
+
+.jobemployerhelp-hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.jobemployerhelp-steps-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.jobemployerhelp-steps-list {
+    padding-left: 24px;
+    list-style-type: disc;
+}
+
+.jobemployerhelp-steps-list li {
+    font-size: 16px;
+    color: #334155;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.jobemployerhelp-steps-list li strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+
+.jobemployerhelp-detailed-steps {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jobemployerhelp-detailed-steps h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+    width: 100%;
+}
+
+.jobemployerhelp-detailed-step {
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.jobemployerhelp-detailed-step h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.jobemployerhelp-detailed-step p {
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.jobemployerhelp-detailed-step ul {
+    padding-left: 24px;
+}
+
+.jobemployerhelp-detailed-step ul li {
+    font-size: 15px;
+    color: #334155;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.jobemployerhelp-detailed-step strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+
+@media (max-width: 1000px) {
+    .jobemployerhelp-container {
+        padding: 40px 30px 60px;
+    }
+
+    .jobemployerhelp-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .jobemployerhelp-left,
+    .jobemployerhelp-right {
+        width: 100%;
+    }
+}

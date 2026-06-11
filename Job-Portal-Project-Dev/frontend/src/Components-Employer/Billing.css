@@ -1,0 +1,583 @@
+.Billing-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    padding: 40px 0;
+}
+
+
+.Billing-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Glow Effect */
+
+.Billing-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
+}
+
+.Billing-btn-primary:hover {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+    background: #2563eb;
+}
+
+
+.Billing-btn-icon-del:hover {
+    background: #fef2f2;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.3);
+}
+
+.Billing-list-row {
+    font-size: 13px;
+    color: #4b5563;
+    transition: background 0.2s ease;
+}
+
+.Billing-list-row:hover {
+    background-color: #f0f7ff;
+    cursor: pointer;
+}
+
+
+.Billing-invoice-id:hover {
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+    text-decoration: underline;
+}
+
+.Billing-status-pill {
+    transition: filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Billing-status-pill:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.Billing-header-card {
+    text-align: center;
+}
+
+.Billing-title-main {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.Billing-subtitle {
+    color: #6b7280;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* Current Plan Card */
+.Billing-current-plan-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Billing-section-label {
+    color: #111827;
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.Billing-plan-title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Billing-plan-name-main {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.Billing-badge {
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.Billing-badge-active {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.Billing-plan-desc {
+    color: #6b7280;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Prices & Buttons */
+.Billing-plan-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Billing-main-price {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.Billing-per-month {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+.Billing-btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.Billing-btn-primary {
+    background: #3b82f6;
+    color: white;
+    border: none;
+}
+
+.Billing-btn-outline {
+    background: white;
+    border: 1px solid #d1d5db;
+    color: black;
+    border-radius: 8px;
+}
+
+.Billing-btn-sm {
+    padding: 6px 12px;
+    font-size: 18px;
+}
+
+.Billing-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.Billing-grid-price {
+    font-size: 22px;
+    margin: 12px 0;
+    font-weight: 700;
+}
+
+.Billing-detail-item {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 8px 0;
+}
+
+.Billing-detail-item span {
+    color: #9ca3af;
+    min-width: 90px;
+    display: inline-block;
+}
+
+.Billing-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Payment Card Specifics */
+.Billing-visa-logo {
+    font-weight: 900;
+    color: #1a1f71;
+    font-style: italic;
+    font-size: 16px;
+    border: 1px solid #e5e7eb;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.Billing-card-number {
+    font-size: 22px;
+    margin: 15px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.Billing-card-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Billing-btn-icon-del {
+    background: #fff;
+    color: #ef4444;
+    border: 1px solid #fee2e2;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Billing-btn-icon-del:hover {
+    background: #fef2f2;
+}
+
+/* Table Styling */
+.Billing-table-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f3f4f6;
+    margin-bottom: 10px;
+}
+
+.Billing-history-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4b5563;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Billing-view-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.Billing-list-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.Billing-list-header,
+.Billing-list-row {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.Billing-list-header {
+    font-size: 12px;
+    color: #9ca3af;
+    font-weight: 700;
+}
+
+.Billing-list-row {
+    font-size: 13px;
+    color: #4b5563;
+}
+
+.font-bold {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Column Widths */
+.Billing-col-plan {
+    flex: 2.5;
+}
+
+.Billing-col-date {
+    flex: 1.5;
+}
+
+.Billing-col-price {
+    flex: 1;
+}
+
+.Billing-col-status {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Billing-col-invoice {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* Status Pills */
+.Billing-status-pill {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    border: none;
+}
+
+.Billing-status-active {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+
+    background: #28A745;
+    border-radius: 9999px;
+
+}
+
+.Billing-status-expired {
+    width: 100px;
+    height: 30px;
+    left: 6772px;
+    top: 7177px;
+
+    background: #DC3545;
+    border-radius: 9999px;
+
+}
+
+.Billing-status-cancelled {
+    width: 100px;
+    height: 30px;
+    left: 6772px;
+    top: 7128px;
+
+    background: #FD7E14;
+    border-radius: 9999px;
+
+}
+
+.Billing-status-pending {
+    width: 100px;
+    height: 30px;
+    left: 6772px;
+    top: 7226px;
+
+    background: #007BFF;
+    border-radius: 9999px;
+
+}
+
+.Billing-status-on-hold {
+
+    width: 100px;
+    height: 30px;
+    left: 6772px;
+    top: 7275px;
+
+    background: #FFC107;
+    border-radius: 9999px;
+
+}
+
+.Billing-col-invoice {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.Billing-invoice-id {
+    color: #3b82f6;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.Billing-doc-icon-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.2s;
+}
+
+.Billing-doc-icon-img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.Billing-btn-icon-del {
+    background: #fff;
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    width: 36px;
+    height: 36px;
+}
+
+.Billing-btn-icon-del:hover {
+    background: #fef2f2;
+}
+
+.Billing-delete-icon-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: invert(38%) sepia(88%) saturate(3882%) hue-rotate(338deg) brightness(96%) contrast(92%);
+}
+
+
+.Billing-card-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Modal Overlay */
+.Billing-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Modal Box */
+.Billing-modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 550px;
+    max-width: 90%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.Billing-modal-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.Billing-modal-info-card {
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 25px;
+}
+
+.Billing-modal-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Billing-modal-label {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.Billing-modal-plan-name {
+    margin: 4px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Billing-modal-price {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.Billing-modal-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #111827;
+    margin-bottom: 30px;
+}
+
+.Billing-modal-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.Billing-modal-btn-grey {
+    flex: 1;
+    background: #8c8c8c;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Billing-modal-btn-confirm {
+    flex: 1;
+    background: #0f2a4a;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.Billing-modal-btn-confirm:hover {
+    background: #0a1f36;
+}
+
+.Billing-badge-active {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.Billing-badge-cancelled {
+    background: #ffedd5;
+    color: #f97316;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .Billing-container {
+        margin: 0 20px;
+    }
+
+    .Billing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .Billing-current-plan-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}

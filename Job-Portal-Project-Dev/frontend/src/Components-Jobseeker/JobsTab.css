@@ -1,0 +1,98 @@
+.jobs-tab-search-bar {
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+
+.Navigation-job-Tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.Navigation-btn {
+    background-color: #1E88E5;
+    color: white;
+    border: 1px solid #1E88E5;
+    min-width: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(30, 136, 229, 0.2);
+    transition: all 0.3s ease;
+}
+
+.Navigation-btn:hover:not(:disabled) {
+    background-color: #1565C0;
+    border-color: #1565C0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(30, 136, 229, 0.3);
+}
+
+.Navigation-btn:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(30, 136, 229, 0.2);
+}
+
+/* .Navigation-btn:disabled {
+    cursor: not-allowed;
+    background-color: #f8f9fa;
+    color: #aeb5bc;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    transform: none;
+} */
+
+.page-numbers {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.page-btn:hover {
+    background-color: #e3f2fd;
+    color: #1E88E5;
+}
+
+.page-btn.active {
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+    font-weight: 600;
+}
+
+.dots {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 30px;
+    color: #777;
+    padding-bottom: 8px;
+    font-weight: bold;
+    pointer-events: none;
+}

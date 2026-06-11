@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.j-sign-up-page {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.j-sign-up-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.j-sign-up-header-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.signup-illustration img {
+  height: 560px;
+  margin-left: 100px;
+}
+
+.j-sign-up-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+.google-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.j-sign-up-form {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+  margin-right: 100px;
+  transform: translateY(-15px);
+}
+
+.j-sign-up-form h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #032240;
+}
+
+.j-sign-up-form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  display: block;
+  color: #032240;
+}
+
+.j-sign-up-form input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 45px;
+  margin-top: 6px;
+  /* margin-top: 6px; */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  /* position: relative; */
+  box-sizing: border-box;
+}
+
+.j-sign-up-submit {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.j-sign-up-form {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+  margin-right: 100px;
+}
+
+.j-sign-up-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  display: block;
+
+}
+
+.input-container,
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 6px;
+  display: block;
+
+}
+
+
+.jsignup-small-verify-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 5;
+  line-height: 1;
+}
+
+
+.verified-badge {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #28a745;
+  font-weight: bold;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.error-msg {
+  color: #d93025;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.error-list {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.error-msg {
+    color: #d93025;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.input-error {
+    border: 1px solid #d93025 !important;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 10%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+} 
+
+ .eye-icon img {
+  width: 20px;
+  height: auto;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-reveal {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Ensure OTP modal displays properly */
+.otp-modal-overlay * {
+    box-sizing: border-box;
+}
+
+.otp-modal-overlay .otp-input-group {
+    overflow: visible !important;
+}
+
+.otp-modal-overlay .otp-input-group input {
+    min-width: 40px !important;
+    max-width: 55px !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  .j-sign-up-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+  }
+
+  .j-sign-up-header .no-account,
+  .j-sign-up-header .employer-redirect-link,
+  .j-sign-up-header .separator {
+    display: none;
+  }
+
+  .j-sign-up-body {
+    flex-direction: column;
+    padding: 30px 30px;
+  }
+
+  .j-sign-up-header-links {
+    width: auto;
+  }
+
+  .j-sign-up-form {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .j-sign-up-form h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 20px;
+  }
+
+  .j-sign-up-header .signup-btn {
+    display: inline-flex;
+    white-space: nowrap;
+  }
+
+  .signup-illustration {
+    display: none;
+  }
+}
+.j-sign-up-header-links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 100px;
+}
+
+.header-back-btn {
+  position: absolute;
+  left: calc(100% + 12px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  color: #032240;
+  background: #f8fbff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.25s ease;
+}
+
+.header-back-btn:hover {
+  color: #032240;
+  background: #f8fbff;
+  border-color: #dbeafe;
+}
+
+@media screen and (max-width: 992px) {
+  .j-sign-up-header-links {
+    margin-right: 0;
+  }
+
+  .header-back-btn {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .j-sign-up-header-links {
+    gap: 10px;
+  }
+
+  .header-back-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}

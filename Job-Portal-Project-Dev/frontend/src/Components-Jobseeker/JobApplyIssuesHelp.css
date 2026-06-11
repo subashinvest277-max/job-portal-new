@@ -1,0 +1,149 @@
+.jobApplyissuesHelp-page {
+    margin-top: 102px;
+    padding-bottom: 50px;
+}
+
+.jobApplyissuesHelp-container {
+    background: #ffffff;
+    padding: 40px 100px 100px;
+}
+
+.jobApplyissuesHelp-title {
+    color: #0f172a;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.jobApplyissuesHelp-updated {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.jobApplyissuesHelp-intro {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 40px;
+}
+
+.jobApplyissuesHelp-layout {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.jobApplyissuesHelp-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.jobApplyissuesHelp-right {
+    flex: 1.2;
+}
+
+.jobApplyissuesHelp-hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.jobApplyissuesHelp-steps-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.jobApplyissuesHelp-steps-list {
+    padding-left: 24px;
+    list-style-type: disc;
+}
+
+.jobApplyissuesHelp-steps-list li {
+    font-size: 16px;
+    color: #334155;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.jobApplyissuesHelp-steps-list li strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.jobApplyissuesHelp-detailed-steps {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jobApplyissuesHelp-detailed-steps h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+    width: 100%;
+}
+
+.jobApplyissuesHelp-detailed-step {
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.jobApplyissuesHelp-detailed-step h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.jobApplyissuesHelp-detailed-step p {
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.jobApplyissuesHelp-detailed-step ul {
+    padding-left: 24px;
+}
+
+.jobApplyissuesHelp-detailed-step ul li {
+    font-size: 15px;
+    color: #334155;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.jobApplyissuesHelp-detailed-step strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+    .jobApplyissuesHelp-container {
+        padding: 40px 30px 60px;
+    }
+
+    .jobApplyissuesHelp-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .jobApplyissuesHelp-left,
+    .jobApplyissuesHelp-right {
+        width: 100%;
+    }
+}

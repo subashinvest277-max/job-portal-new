@@ -1,0 +1,478 @@
+.AdminTickets-container {
+  width: 95%;
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+.AdminTickets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.AdminTickets-header h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #111827;
+}
+
+.AdminTickets-header p {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.AdminTickets-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+.AdminTickets-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.AdminTickets-table thead {
+  background: #f9fafb;
+}
+
+.AdminTickets-table th {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+ 
+.AdminTickets-table td{
+    padding: 16px;
+    font-size: 14px;
+    color: #111827;
+    border-bottom: 1px solid #f1f5f9;
+    text-align: left;
+    font-weight: 400;
+}
+
+.AdminTickets-status {
+  padding: 6px 5px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+ 
+.AdminTickets-status.Pending{
+    background: #fef3c7;
+    color: #92400e;
+    width: 50px;
+    padding-left: 10px;
+}
+ 
+.AdminTickets-status.Resolved{
+    background: #dcfce7;
+    color: #166534;
+    width: 50px;
+    padding-left: 10px;
+}
+
+.AdminTickets-status.InProgress {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+.AdminTickets-status.Hold{
+    background: #f5d72c;
+    color: #535249;
+    width: 50px;
+    padding-left: 10px;
+}
+ 
+.AdminTickets-status option{
+    background: #ffffff;
+    color: #1e3a8a;
+}
+
+.Adm-tic-container {
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.Adm-tic-top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
+
+.Adm-tic-btn-back {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.Adm-tic-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.Adm-tic-status-badge {
+  background-color: #fff9e6;
+  border: 1px solid #ffe0b2;
+  color: #f57c00;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Adm-tic-btn-action {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.Adm-tic-btn-delete {
+  color: #333;
+}
+
+.Adm-tic-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 25px 15px;
+  margin-bottom: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.Adm-tic-title-block {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.Adm-tic-icon-placeholder {
+  font-size: 40px;
+  background: #fff3e0;
+  padding: 10px;
+  border-radius: 12px;
+  line-height: 1;
+}
+
+.Adm-tic-main-title {
+  font-size: 22px;
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+}
+
+.Adm-tic-id {
+  color: #0084ff;
+  font-weight: bold;
+  margin: 0 0 6px 0;
+}
+
+.Adm-tic-date-created {
+  color: #888888;
+  font-size: 13px;
+  margin: 0;
+}
+
+.Adm-tic-meta-info {
+  min-width: 200px;
+}
+
+.Adm-tic-meta-row {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.Adm-tic-meta-label {
+  color: #888888;
+  width: 90px;
+}
+
+.Adm-tic-meta-value {
+  color: #222222;
+  font-weight: 500;
+}
+
+.Adm-tic-priority-medium {
+  color: #f57c00;
+}
+
+.Adm-tic-main-content {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+}
+
+.Adm-tic-left-panel {
+  flex: 3;
+}
+
+.Adm-tic-right-panel {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.Adm-tic-section-title {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.Adm-tic-description {
+  color: #4a4a4a;
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 20px;
+  height: 100px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 25px 10px;
+}
+
+.Adm-tic-attachment-block {
+  margin-bottom: 35px;
+}
+
+.Adm-tic-attachment-label {
+  display: block;
+  font-size: 13px;
+  color: #0056b3;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.Adm-tic-attachment-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background: #fafafa;
+  max-width: 450px;
+}
+
+.Adm-tic-file-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.Adm-tic-file-name {
+  flex-grow: 1;
+  font-size: 13px;
+  color: #666;
+}
+
+.Adm-tic-file-size {
+  font-size: 12px;
+  color: #999;
+  margin-right: 15px;
+}
+
+.Adm-tic-download-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+.Adm-tic-user-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.Adm-tic-grid-row {
+  display: flex;
+  align-items: center;
+}
+.Adm-tic-grid-row input{
+  width: 50%;
+  height: 10px;
+  color: #0084ff;
+}
+
+.Adm-tic-grid-label {
+  color: #777777;
+  width: 140px;
+}
+
+.Adm-tic-grid-val {
+  color: #222222;
+  font-weight: 500;
+  height: 50px;
+}
+
+.Adm-tic-link {
+  color: #0084ff;
+  cursor: pointer;
+}
+
+/* .status-modal-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.status-modal-content {
+    background: #ad1010;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    text-align: center;
+    
+}
+
+.status-modal-options {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 8px;
+    margin: 15px 0;
+    display: flex;
+    position: relative;
+    top: 0;
+    left:0;
+    background-color: #979494;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.status-modal-options button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #898989;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100px;
+}
+
+.status-modal-options button:hover {
+    background: #eeeeee;
+}
+
+.status-modal-cancel {
+    border: none;
+    color: #ba1717;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: center;
+} */
+
+.status-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.status-modal-content {
+    background: #ad1010;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    text-align: center;
+    
+}
+ 
+.status-modal-options {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 8px;
+    margin: 15px 0;
+    display: flex;
+    position: relative;
+    top: 0;
+    left:0;
+    background-color: #979494;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+ 
+.status-modal-options button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #898989;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100px;
+}
+ 
+.status-modal-options button:hover {
+    background: #eeeeee;
+}
+ 
+.status-modal-cancel {
+    border: none;
+    color: #ba1717;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.Escalation-priority{
+    padding: 6px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100px;
+   
+}
+ 
+.Escalation-priority.High{
+    background: #fee2e2;
+    color: #b91c1c;
+    width: 90px;
+}
+ 
+.Escalation-priority.Medium{
+    background: #fef3c7;
+    color: #92400e;
+    width: 90px;
+}
+ 
+.Escalation-priority.Low{
+    background: #dcfce7;
+    color: #166534;
+    width: 90px;
+}

@@ -1,0 +1,534 @@
+.pending-verification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+}
+ 
+/* The Pop-up Card (Solid White) */
+.pending-pop-box {
+    background-color: #ffffff !important;
+    padding: 60px 40px;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-width: 480px;
+    width: 90%;
+    z-index: 10000;
+    border: 1px solid #eaeaea;
+}
+ 
+/*  Ensure the Clock Icon is sharp */
+.pending-clock-image {
+    width: 130px;
+    margin-bottom: 30px;
+    animation: bouncePop 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+ 
+@keyframes bouncePop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+ 
+/*  Text Styling inside the Card */
+.pending-pop-box h2 {
+    font-size: 30px;
+    color: #01325D;
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+ 
+.pending-pop-box p {
+    color: #4a5568;
+    font-size: 16px;
+    line-height: 1.6;
+}
+ 
+/*  Logic to prevent scrolling while blurred */
+body.modal-open {
+    overflow: hidden;
+}
+ 
+ 
+ 
+.container{
+    display: flex;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+    grid-template-columns: 10% auto;
+    margin-top: 120px;
+    gap: 5px;
+}
+ 
+/* ===== FIX: Sidebar scroll without hiding content ===== */
+/* Keep original styles intact, only add these fixes */
+ 
+/* Fix container height and overflow */
+.container1 {
+    display: grid;
+    grid-template-columns: 300px auto;
+    margin-top: 120px;
+    gap: 5px;
+    height: calc(100vh - 120px);
+    overflow: hidden;
+    position: relative;
+}
+ 
+/* Make sidebar scrollable without hiding content */
+.EAside {
+    background-color: #01325D;
+    border: 1px solid black;
+    border-radius: 7px;
+    color: white;
+    min-width: 300px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 0;
+}
+ 
+/* Make collapsed sidebar scrollable */
+.EAside2 {
+    background-color: #01325D;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    color: white;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 0;
+}
+ 
+.Emainsec, .Emainsec2 {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+   
+}
+ 
+.EAside::-webkit-scrollbar,
+.EAside2::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+.EAside::-webkit-scrollbar-track,
+.EAside2::-webkit-scrollbar-track {
+    background: #0a4a7a;
+    border-radius: 10px;
+}
+ 
+.EAside::-webkit-scrollbar-thumb,
+.EAside2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+ 
+ 
+.EAside, .EAside2 {
+    scroll-behavior: smooth;
+}
+ 
+.pending-main-section {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.EAside2{
+    background-color: #01325D;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+    color: white;  
+}
+ 
+.EAside2 img{
+    padding: 5px; 
+    cursor: pointer; 
+}
+ 
+.Aside-Title{
+    color: white;
+    padding-left:15px ;
+}
+ 
+.ENavbar{
+    padding: 10px;
+    box-shadow: 0 0 0 1 black;
+    margin: 10px;
+}
+ 
+.ENavbar1{
+    padding: 25px 10px;
+    box-shadow: 0 0 0 1 black;
+    margin: -15px 10px;
+    /* background-color: aqua; */
+}
+ 
+.Emainsec{
+    /* margin-left: 20px; */
+    border-radius: 7px;
+    border: 0.5 solid rgba(0, 0, 0, 0.25);
+    flex: 1;
+    width: 90%;
+    margin: 0 10px;
+}
+ 
+.Emainsec2{
+ 
+    /* margin-left: 20px; */
+    border-radius: 7px;
+    border: 0.5 solid rgba(0, 0, 0, 0.25);
+    flex: 1;
+    margin: 0px 10px 10px -150px;  
+}
+ 
+.NavTitle{
+    margin: 25px 0;  
+}
+ 
+.Enav-item.active{
+   box-shadow: 1px 1px 1px 2px rgba(0.1, 0.1, 0.1, 0.1);
+   margin-top: 5px;
+   padding: 15px;
+}
+ 
+.Enav-item{
+    margin:  5px 10px;
+    padding: 10px;
+}
+ 
+.Navbox{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+ 
+.Navbox1{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+ 
+.Active {
+  display: flex;
+  align-items: center;
+  background-color: #0066cc;
+  padding: 3px 20px;
+  margin-left: -25px;
+  border-radius: 15px;
+  color: #FFD700;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+}
+ 
+.Welcome-Note{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 25px; */
+    padding: 25px;
+    box-shadow: 1px 1px 1px 2px rgba(0.1, 0.1, 0.1, 0.1);
+    border-radius: 10px;
+    /* background-color: #FFD700; */
+}
+ 
+.post-job-btn{
+    background-color: #165082;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: whitesmoke;
+    outline: 1px solid white;  
+}
+ 
+.E-DashB-Over-View{
+    box-shadow: 1px 1px 1px 2px rgba(0.1, 0.1, 0.1, 0.1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 25px;
+}
+ 
+.EDashB-Application-Counts{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: snow;
+    gap: 10px;
+    border-radius: 15px;
+}
+ 
+.E-DashB-No-Counts{
+    display: flex;
+    flex-direction: column;
+    /* background-color: azure; */
+    box-shadow: 1px 1px 1px 2px rgba(0.1, 0.1, 0.1, 0.1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;  
+}
+ 
+.E-DashB-No-Counts div{
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+ 
+.EE-Name{
+    border: 1px solid white;
+    margin: 10px 20px;
+    border-radius: 10px;
+    background-color: snow;
+    width: fit-content;
+    padding: 4px 10px;
+    color: #0066cc;
+}
+ 
+.E-job-status{
+    width: 200px;
+}
+ 
+.ERecent-Post-Jobs{
+    height: 400px;
+    box-shadow: 1px 1px 1px 2px rgba(0.1, 0.1, 0.1, 0.1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1E88E5;
+    font-weight: 700;
+}
+ 
+.ERecent-Post-Cont{
+    box-shadow: 1px 1px 1px 2px rgba(0.1, 0.1, 0.1, 0.1);
+    border-radius: 10px;
+    /* font-family: "inter"; */
+    padding: 10px 15px;
+    margin-top: 25px;    /* background-color: #165082; */  
+}
+.Active1{
+    background-color: #0066cc;
+    padding: 7px 7px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.postedjobs-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    font-family: sans-serif;
+    padding: 0 20px;
+}
+ 
+.postedjobs-header {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+ 
+ 
+.postedjobs-grid-layout {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(5, 75px) 180px;
+    gap: 15px;
+    align-items: center;
+    padding: 0 25px;
+}
+ 
+.postedjobs-table-header {
+    margin-bottom: 15px;
+}
+ 
+.postedjobs-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #718096;
+    text-align: center;
+}
+.Active1{
+    background-color: #0066cc;
+    padding: 7px 7px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+ 
+.pending-main-section{
+    width: 100%;
+}
+ 
+.pending-section {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+ 
+.pending-icon {
+  width: 80px;
+  animation: pulse 1s infinite;
+}
+ 
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+ 
+/* --- Dashboard Recently Posted Jobs (Card-Style Grid) --- */
+ 
+.ERecent-Post-Table-Container {
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.menu-dots-icon{
+    position: relative;
+}
+ 
+.recently-postedjobs-dropdown {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 100;
+    overflow: hidden;
+}
+ 
+.dashboard-job-header {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 100px) 180px;
+    padding: 30px 25px;
+    margin-bottom: 15px;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;      
+    margin-bottom: 16px;      
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+ 
+.dashboard-job-header span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #475569;
+    text-align: center;
+}
+ 
+.dashboard-job-header span:first-child {
+    text-align: left;
+}
+ 
+ 
+.dashboard-job-row {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 100px) 180px;
+    padding: 20px 25px;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;      
+    margin-bottom: 16px;    
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+ 
+.dashboard-job-row:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    border-color: #cbd5e1;
+}
+ 
+.count-badge {
+    background: #f1f5f9;
+    height: 40px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 auto;
+}
+ 
+ 
+.dashboard-job-info strong {
+    display: block;
+    font-size: 17px;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+ 
+.dashboard-job-info small {
+    color: #64748b;
+    font-size: 12px;
+}
+ 
+.dashboard-job-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+ 
+.view-app-link {
+    background: none;
+    border: none;
+    color: #1e293b;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+ 
+.view-app-link:hover {
+    background: #f8fafc;
+    color: #2563eb;
+}
+ 
+.dots-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #94a3b8;
+    padding: 5px;
+}
+ 
+ 
+.view-more-link {
+    margin: 10px auto;
+    background: none;
+    border: none;
+    color: #2563eb;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+}

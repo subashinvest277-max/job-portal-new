@@ -1,0 +1,398 @@
+.RepAJob-container {
+ width: 95%;
+ background: #fff;
+ border-radius: 14px;
+ padding: 24px;
+ border: 1px solid #e5e7eb;
+}
+ 
+.RepAJob-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 20px;
+}
+ 
+.RepAJob-header h2 {
+ font-size: 28px;
+ margin-bottom: 5px;
+ color: #111827;
+}
+ 
+.RepAJob-header p {
+ font-size: 15px;
+ color: #6b7280;
+}
+ 
+.RepAJob-table-wrapper {
+ width: 100%;
+ overflow-x: auto;
+ border-radius: 14px;
+ border: 1px solid #e5e7eb;
+}
+ 
+.RepAJob-table {
+ width: 100%;
+ border-collapse: collapse;
+}
+ 
+.RepAJob-table thead {
+ background: #f9fafb;
+}
+ 
+.RepAJob-table th {
+ padding: 16px;
+ text-align: left;
+ font-size: 14px;
+ color: #374151;
+ border-bottom: 1px solid #e5e7eb;
+}
+ 
+.RepAJob-table td {
+ padding: 16px;
+ font-size: 14px;
+ color: #111827;
+ border-bottom: 1px solid #f1f5f9;
+ text-align: left;
+ font-weight: 400;
+}
+ 
+/* Priority Badges inside Table */
+.Escalation-priority {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 6px 20px;
+ border-radius: 30px;
+ font-size: 12px;
+ font-weight: 600;
+ width: 100px;
+ box-sizing: border-box;
+}
+ 
+.Escalation-priority.High {
+ background: #fee2e2;
+ color: #b91c1c;
+ width: 90px;
+}
+ 
+.Escalation-priority.Medium {
+ background: #fef3c7;
+ color: #92400e;
+ width: 90px;
+}
+ 
+.Escalation-priority.Low {
+ background: #dcfce7;
+ color: #166534;
+ width: 90px;
+}
+ 
+.RepAJob-detail-container {
+ padding: 40px;
+ box-sizing: border-box;
+ border: 1px solid #e5e7eb;
+ border-radius: 10px;
+ background: #ffffff;
+}
+ 
+.RepAJob-main-title {
+ font-size: 22px;
+ color: #1a1a1a;
+}
+ 
+.RepAJob-detail-actions {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 10px;
+ margin-bottom: 30px;
+}
+ 
+.RepAJob-btn-back {
+ background: #ffffff;
+ border: 1px solid #dcdcdc;
+ padding: 8px 12px;
+ border-radius: 4px;
+ cursor: pointer;
+ font-weight: 500;
+ color: #374151;
+ transition: background 0.2s;
+}
+ 
+.RepAJob-btn-back:hover {
+ background: #f9fafb;
+}
+ 
+/* Top Actions Group */
+.RepAJob-top-actions {
+ display: flex;
+ align-items: center;
+ gap: 12px;
+}
+ 
+.RepAJob-btn-action {
+ display: inline-flex;
+ align-items: center;
+ background: #ffffff;
+ border: 1px solid #dcdcdc;
+ padding: 8px 16px;
+ border-radius: 4px;
+ cursor: pointer;
+ font-weight: 500;
+ color: #374151;
+ transition: all 0.2s ease;
+}
+ 
+.RepAJob-btn-action:hover {
+ background: #f9fafb;
+}
+ 
+.RepAJob-btn-delete {
+ color: #333;
+}
+ 
+.RepAJob-btn-icon-img {
+ width: 15px;
+ height: 15px;
+ object-fit: contain;
+}
+ 
+/* Header Info Card Panel */
+.RepAJob-detail-card {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ border: 1px solid #e5e7eb;
+ border-radius: 10px;
+ padding: 40px 15px;
+ margin-bottom: 25px;
+ background: #ffffff;
+}
+ 
+.RepAJob-card-left {
+ display: flex;
+ gap: 15px;
+ align-items: center;
+}
+ 
+.RepAJob-doc-icon-box {
+ font-size: 40px;
+ background: #fff3e0;
+ padding: 10px;
+ border-radius: 12px;
+ line-height: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+ 
+.RepAJob-svg-icon {
+ width: 40px;
+ height: 40px;
+ object-fit: contain;
+}
+ 
+.RepAJob-ticket-header h3 {
+ font-size: 18px;
+ margin: 0 0 8px 0;
+ color: #1a1a1a;
+}
+ 
+.RepAJob-ticket-id {
+ display: block;
+ color: #0084ff;
+ font-weight: bold;
+ margin: 0 0 6px 0;
+ font-size: 14px;
+}
+ 
+.RepAJob-timestamp {
+ color: #888888;
+ font-size: 13px;
+ margin: 0;
+}
+ 
+/* Right Meta Block */
+.RepAJob-card-right {
+ min-width: 200px;
+}
+ 
+.RepAJob-meta-row {
+ display: flex;
+ margin-bottom: 10px;
+ font-size: 14px;
+}
+ 
+.meta-label {
+ color: #888888;
+ width: 90px;
+}
+ 
+.meta-separator {
+ color: #888888;
+ margin-right: 8px;
+}
+ 
+.meta-value-priority {
+ font-weight: 500;
+}
+ 
+.meta-value-priority[data-priority="high"] { color: #b91c1c; }
+.meta-value-priority[data-priority="medium"] { color: #f57c00; }
+.meta-value-priority[data-priority="low"] { color: #166534; }
+ 
+.status-text {
+ color: #222222;
+ font-weight: 500;
+ display: inline-flex;
+ align-items: center;
+}
+ 
+/* Content Dynamic Grid Layout Panels */
+.RepAJob-grid-details {
+ margin-top: 50px;
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+}
+ 
+.RepAJob-user-section {
+ width: 100%;
+ margin-top: 10px;
+ margin-bottom: 40px;
+}
+ 
+.RepAJob-section-title {
+ font-size: 18px;
+ color: #1a1a1a;
+ margin-bottom: 20px;
+ margin-top: 10px;
+}
+ 
+.RepAJob-user-grid {
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+}
+ 
+.RepAJob-grid-row {
+ display: flex;
+ align-items: center;
+}
+ 
+.RepAJob-grid-label {
+ color: #777777;
+ width: 140px;
+ font-size: 14px;
+}
+ 
+.RepAJob-user-grid input {
+ width: 50%;
+ height: 35px; /* input match and proper height adjustment */
+ color: #0084ff;
+ border: 1px solid #e5e7eb;
+ border-radius: 6px;
+ padding: 0 12px;
+ background-color: #f9fafb;
+ font-size: 14px;
+ font-weight: 500;
+ box-sizing: border-box;
+}
+ 
+.RepAJob-user-grid input:disabled {
+ cursor: not-allowed;
+}
+ 
+/* Bottom Report Details Section Box */
+.RepAJob-section {
+ width: 100%;
+ margin-top: 10px;
+ margin-bottom: 20px;
+}
+ 
+.RepAJob-section h4 {
+ font-size: 16px;
+ color: #1a1a1a;
+ margin: 0 0 12px 0;
+}
+ 
+.RepAJob-description-text {
+ color: #4a4a4a;
+ line-height: 1.6;
+ font-size: 15px;
+ margin: 0;
+ border: 1px solid #e5e7eb;
+ border-radius: 10px;
+ padding: 25px 15px;
+ background: #ffffff;
+ min-height: 80px;
+}
+ 
+.RepAJob-status-modal-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background-color: rgba(0, 0, 0, 0.4); /* background dimming match */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 9999;
+}
+ 
+.RepAJob-status-modal-content {
+ background: #ffffff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ width: 290px;
+ text-align: center;
+ box-sizing: border-box;
+}
+ 
+.RepAJob-status-modal-content h3 {
+ margin: 0 0 15px 0;
+ font-size: 16px;
+ font-weight: 600;
+ color: #111827;
+}
+ 
+.RepAJob-status-modal-options {
+ display: flex;
+ gap: 8px;
+ margin: 15px 0;
+ justify-content: center;
+}
+ 
+.RepAJob-status-modal-options button {
+ padding: 10px 12px;
+ border: 1px solid #ddd;
+ background: #fdfdfd;
+ border-radius: 4px;
+ cursor: pointer;
+ font-weight: 500;
+ font-size: 13px;
+ color: #374151;
+ transition: all 0.2s ease;
+}
+ 
+.RepAJob-status-modal-options button:hover {
+ background: #eeeeee;
+}
+ 
+.RepAJob-status-modal-cancel {
+ background: none;
+ border: none;
+ color: #888;
+ text-decoration: underline;
+ cursor: pointer;
+ margin-top: 5px;
+ font-size: 13px;
+}
+ 
+.RepAJob-status-modal-cancel:hover {
+ color: #4b5563;
+}
+ 

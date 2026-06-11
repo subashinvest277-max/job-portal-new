@@ -1,0 +1,115 @@
+.appliedjobsO-job-card {
+    border-radius: 30px;
+    margin: 120px 60px 30px 60px;
+    padding: 50px;
+    border: 1px solid #1111 ;
+    background-color: #1E88E50A;
+}
+
+.AppliedJobs-overview-main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 20px 60px;
+}
+.AppliedJobsStatus{
+    border: 1px solid #1111;
+    border-radius: 10px;
+    margin-left: 40px;
+    padding: 10px;
+}
+.applied-application-status-status-progress{
+    background-color: yellow;
+    margin: 10px;
+}
+.applied-application-status{
+    margin-left: 25px;
+}
+.Applied-job-tags{
+    padding: 10px;
+    margin: 25px 0;
+}
+.status-container {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #1111;
+  margin-left: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 350px;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.stepper-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-item {
+  display: flex;
+  gap: 20px;
+  min-height: 80px; /* Controls distance between dots */
+}
+
+.step-line-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 2;
+}
+
+/* Style for completed steps (Blue) */
+.completed .step-dot {
+  border-color: #2196f3;
+}
+
+.completed .inner-dot {
+  width: 6px;
+  height: 6px;
+  background: #2196f3;
+  border-radius: 50%;
+}
+
+.vertical-line {
+  width: 2px;
+  flex-grow: 1;
+  background-color: #e0e0e0;
+}
+
+/* Color the line blue if the current step is completed */
+.completed .vertical-line {
+  background-color: #2196f3;
+}
+
+.step-label {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.step-subtext {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #777;
+}

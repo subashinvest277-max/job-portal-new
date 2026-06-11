@@ -1,0 +1,324 @@
+
+
+.Helpcenter-page {
+    padding-top: 57px;
+}
+
+.helpcenter-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.Helpcenter-Img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Helpcenter-Img-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+    max-width: 720px;
+    padding: 0 40px;
+}
+
+.Helpcenter-Img-content h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Helpcenter-Img-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 18px;
+
+}
+
+.Helpcenter-search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Helpcenter-search-box input {
+    flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.Helpcenter-search-box button {
+    background: #0b5ed7;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Helpcenter-search-box button img {
+    width: 16px;
+}
+
+
+.Helpcenter-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.Helpcenter-section-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.Helpcenter-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 80px;
+}
+
+.Helpcenter-sidebar {
+    width: 420px;
+}
+
+.helpcenter-main-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.helpcenter-main-item.active-main {
+    background-color: #e7f3ff;
+    border-color: #e7f3ff;
+    color: #007bff;
+}
+
+.helpcenter-arrow {
+    border: solid #6c757d;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.helpcenter-main-item.open .helpcenter-arrow {
+    transform: rotate(-135deg);
+    margin-top: 3px;
+}
+
+.helpcenter-submenu {
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin: 0.5rem 2rem 1rem 0;
+}
+
+.helpcenter-submenu-link {
+    text-decoration: none;
+}
+
+.helpcenter-submenu-item {
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #032240;
+    transition: background 0.2s ease;
+}
+
+.helpcenter-submenu-item:hover {
+    background-color: #f3f7fb;
+}
+
+
+.helpcenter-support-options {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+}
+
+.helpcenter-support-options div {
+    padding: 1rem;
+    align-content: center;
+    border-radius: 8px;
+}
+
+.helpcenter-support-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.helpcenter-support-item:hover {
+    background-color: rgb(202, 201, 201);
+}
+
+.helpcenter-search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+.helpcenter-search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #d0d5dd;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+
+.helpcenter-search-item {
+    padding: 10px 12px;
+  font-size: 14px;
+  color: #222;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.helpcenter-search-item:hover {
+    background-color: #f5f5f5;
+}
+
+.helpcenter-search-no-result {
+    padding: 10px 14px;
+    color: #999;
+    text-align: left;
+    font-size: 14px;
+}
+
+.helpcenter-search-item.active {
+    background-color: #e7f3ff;
+    color: #0b5ed7;
+    font-weight: 500;
+}
+
+.helpcenter-search-item:hover,
+.helpcenter-search-item.active {
+  background: #f1f3f4;
+}
+
+@media (max-width: 768px) {
+
+  .Helpcenter-page {
+    padding-top: 72px;
+  }
+
+  .helpcenter-container {
+    position: relative;
+    height: 320px;
+  }
+
+  .Helpcenter-Img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .Helpcenter-Img-content {
+    position: absolute;              
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 16px;
+    max-width: 100%;
+    width: 70%;
+    text-align: center;
+  }
+
+  .Helpcenter-Img-content h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .Helpcenter-Img-content p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+
+  .helpcenter-search-wrapper {
+    width: 100%;
+  }
+
+  .Helpcenter-search-box {
+    border-radius: 6px;
+  }
+
+  .Helpcenter-section {
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+
+  .Helpcenter-section-title{
+    padding: 0 15px;
+  }
+
+  .Helpcenter-layout {
+    padding: 0 50px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .Helpcenter-sidebar {
+    width: 100%;
+  }
+
+  .helpcenter-main-item {
+    font-size: 15px;
+    padding: 0.9rem;
+  }
+
+  .helpcenter-submenu {
+    margin: 0.5rem 0 1rem 0;
+    padding-left: 0.5rem;
+  }
+
+  .helpcenter-submenu-item {
+    font-size: 14px;
+    padding: 0.8rem;
+  }
+
+  .helpcenter-support-options {
+    gap: 16px;
+  }
+
+  .helpcenter-support-item {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,82 @@
+
+.technicalhelp-page {
+    margin-top: 102px;
+
+}
+
+.technicalhelp-container {
+
+    background: #ffffff;
+    padding: 40px 100px 100px;
+
+}
+
+.technicalhelp-title {
+    color: #0f172a;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.technicalhelp-updated {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.technicalhelp-intro {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 30px;
+}
+
+.technicalhelp-hero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.technicalhelp-hero-img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.technicalhelp-section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 32px 0 12px;
+}
+
+.technicalissue-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.technicalissue-card {
+    border-left: 4px solid #3b82f6;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.technicalissue-card h3 {
+    font-size: 17px;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.technicalissue-card p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 4px 0;
+}
+
+.technicalissue-card strong {
+    color: #0f172a;
+}

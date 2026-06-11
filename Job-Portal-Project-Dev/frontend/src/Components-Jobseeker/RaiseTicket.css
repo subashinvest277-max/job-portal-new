@@ -1,0 +1,312 @@
+.Raiseticket-main-wrapper {
+    background-color: #f8fafc;
+    min-height: 100vh;
+    padding-top: 102px;
+    padding-bottom: 100px;
+}
+
+.form-group-err {
+    color: rgba(255, 39, 39, 0.729);
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+.Raiseticket-page {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Raiseticket-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Raiseticket-header h1 {
+    font-size: 2rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.Raiseticket-header p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 2px;
+}
+
+.Raiseticket-card {
+    background: white;
+    width: 100%;
+    max-width: 750px;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.Raiseticket-form-group {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Raiseticket-form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #334155;
+}
+
+/* Error styling for inputs and textarea */
+input.Raiseticket-form-group-err,
+textarea.Raiseticket-form-group-err {
+    border: 1.5px solid rgba(255, 39, 39, 0.729) !important;
+}
+
+/* Error styling for custom select */
+.Raiseticket-custom-select.Raiseticket-custom-select-err {
+    border: 1.5px solid rgba(255, 39, 39, 0.729) !important;
+    background-color: #fff5f5 !important;
+}
+
+/* Error styling for file input */
+.Raiseticket-file-input-error {
+    border: 1.5px solid #dc2626 !important;
+    background-color: #fee2e2 !important;
+}
+
+.Raiseticket-file-input-error:hover {
+    border-color: #dc2626 !important;
+}
+
+input,
+textarea,
+.Raiseticket-custom-select,
+.Raiseticket-file-input {
+    padding: 14px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+.Raiseticket-file-input {
+    cursor: pointer;
+}
+
+.Raiseticket-custom-select.open {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.Raiseticket-custom-select {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Raiseticket-arrow-icon {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #64748b;
+    border-bottom: 2px solid #64748b;
+    transform: rotate(45deg);
+    margin-bottom: 4px;
+    transition: all 0.2s ease;
+}
+
+.Raiseticket-custom-select.open .Raiseticket-arrow-icon {
+    transform: rotate(-135deg);
+    border-color: #2563eb;
+    margin-bottom: -4px;
+}
+
+.Raiseticket-options {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    z-index: 50;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.Raiseticket-options.scrollable {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.Raiseticket-options li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.Raiseticket-options li:hover {
+    background-color: #f8fafc;
+    color: #2563eb;
+}
+
+.Raiseticket-form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.Raiseticket-btn-cancel {
+    padding: 12px 45px;
+    border: 1px solid #fc8181;
+    background: white;
+    color: #f56565;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.Raiseticket-btn-cancel:hover {
+    background-color: #fff5f5;
+}
+
+.Raiseticket-btn-submit {
+    padding: 12px 45px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.Raiseticket-btn-submit:hover {
+    background: #1d4ed8;
+}
+
+.Raiseticket-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.Raiseticket-modal {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+}
+
+.Raiseticket-modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.Raiseticket-btn-yes {
+    background-color: #2563eb !important;
+    color: #fff !important;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.Raiseticket-btn-no {
+    background-color: #dc2626 !important;
+    color: #fff !important;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.Raiseticket-success-msg {
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.Raiseticket-success-msg img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Raiseticket-success-msg h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.Raiseticket-success-msg p {
+    font-size: 1.2rem;
+    color: #475569;
+}
+
+.Raiseticket-status-container {
+    margin-top: 102px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Raiseticket-loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2563eb;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 1s linear infinite;
+}
+
+.file-info {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 8px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

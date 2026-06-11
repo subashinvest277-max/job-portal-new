@@ -1,0 +1,148 @@
+.view-applicants-page {
+  background-color: #f4f7fe;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+}
+ 
+.main-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+ 
+.applicants-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.applicants-table th { text-align: left; padding: 15px; border-bottom: 2px solid #f1f5f9; color: #64748b; }
+.applicants-table td { padding: 15px; border-bottom: 1px solid #f1f5f9; }
+ 
+.candidate-cell { display: flex; align-items: center; gap: 15px; }
+.table-avatar { width: 45px; height: 45px; border-radius: 50%; }
+.name { font-weight: 700; display: block; color: #1e293b; }
+.designation { font-size: 12px; color: #94a3b8; }
+ 
+.table-skills { display: flex; gap: 5px; align-items: center; }
+.mini-skill { background: #eff6ff; color: #2563eb; padding: 2px 8px; border-radius: 4px; font-size: 11px; }
+.more-count { font-size: 11px; color: #94a3b8; }
+ 
+.view-link-btn { color: #2563eb; background: none; border: none; font-weight: 700; cursor: pointer; }
+ 
+/* DETAIL PAGE */
+.detail-container { max-width: 1200px; margin: 0 auto; }
+.detail-header { display: flex; justify-content: space-between; margin-bottom: 30px; }
+.back-btn { background: none; border: none; cursor: pointer; color: #64748b; font-weight: 600; }
+ 
+.detail-layout { display: grid; grid-template-columns: 350px 1fr; gap: 30px; }
+ 
+.profile-main-card { background: white; padding: 40px; border-radius: 12px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.detail-avatar { width: 120px; height: 120px; border-radius: 50%; margin-bottom: 20px; border: 5px solid #f1f5f9; }
+.role-tag { background: #f1f5f9; padding: 5px 15px; border-radius: 20px; display: inline-block; margin: 15px 0; font-size: 13px; }
+ 
+.detail-right { background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.tabs-bar { display: flex; border-bottom: 1px solid #f1f5f9; padding: 0 30px; }
+.tab { padding: 20px; cursor: pointer; color: #64748b; font-weight: 500; }
+.tab.active { color: #2563eb; border-bottom: 3px solid #2563eb; }
+ 
+.tab-pane { padding: 40px; }
+.tab-pane section { margin-bottom: 30px; }
+.tab-pane h4 { color: #1e293b; margin-bottom: 15px; border-left: 4px solid #2563eb; padding-left: 10px; }
+ 
+.skill-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+.skill-pills span { background: #f1f5f9; padding: 8px 15px; border-radius: 30px; font-size: 13px; color: #475569; }
+ 
+.btn-invite-solid { background: #2563eb; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; margin-left: 10px; }
+.btn-reject-outline { border: 1px solid #ef4444; color: #ef4444; background: white; padding: 12px 25px; border-radius: 8px; cursor: pointer; margin-left: 10px; }
+.btn-msg { background: #f1f5f9; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; }
+/* Status Pill Base */
+.status-pill {
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+}
+ 
+/* Status Colors */
+.status-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+ 
+.status-invited {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+ 
+.status-rejected {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+ 
+/* Table specific spacing */
+.applicants-table td {
+  vertical-align: middle;
+}
+/* Work Mode Tag (Hybrid/Remote) */
+.work-mode-pill {
+    background-color: #f3f4f6;
+    color: #374151;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+ 
+/* Resume Preview Card */
+.resume-preview-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff;
+}
+ 
+.file-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+ 
+.file-name {
+    font-weight: 600;
+    margin: 0;
+    font-size: 14px;
+}
+ 
+.file-size {
+    font-size: 12px;
+    color: #6b7280;
+    margin: 0;
+}
+ 
+.preview-btn {
+    padding: 6px 16px;
+    border: 1px solid #d1d5db;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+ 
+.college-name {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 2px;
+}
+ 
+.cover-letter-box {
+    padding: 15px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    line-height: 1.6;
+    color: #4b5563;
+    font-size: 14px;
+}

@@ -1,0 +1,151 @@
+.works-section {
+  background-color: #e9f3fc;
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-heading {
+  font-size: 40px;
+  margin: 40px 0 50px;
+  font-weight: 800;
+  color: #111827;
+}
+
+/* Cards */
+.infocard-section {
+  display: flex;
+  gap: 12rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.infocard-wrapper {
+  cursor: pointer;
+  width: 360px;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.infocard-wrapper:hover {
+  transform: translateY(-6px);
+}
+
+/* ================= MODAL ================= */
+
+.works-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s ease;
+}
+
+.works-modal-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.works-modal {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 460px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.95);
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+.works-modal.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Close */
+.works-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f5f9;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.works-modal-close:hover {
+  background: #e2e8f0;
+}
+
+/* Icon */
+.works-modal-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #e0ecff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.works-modal-icon img {
+  width: 40px;
+}
+
+/* Title */
+.works-modal-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Content */
+.works-modal-content {
+  flex: 1;
+  overflow-y: auto;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+  padding-right: 6px;
+}
+
+.works-modal-content p {
+  margin-bottom: 12px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .infocard-section {
+    gap: 2rem;
+  }
+
+  .works-modal {
+    max-width: 92%;
+    height: 420px;
+    padding: 20px;
+  }
+
+  .work-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+}

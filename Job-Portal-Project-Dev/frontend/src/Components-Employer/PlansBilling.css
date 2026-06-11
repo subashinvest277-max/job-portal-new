@@ -1,0 +1,782 @@
+Container .PlansBilling-container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+/*  Header Section */
+.PlansBilling-header-box {
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.PlansBilling-main-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.PlansBilling-sub-title {
+    color: #666;
+    margin: 0;
+    font-size: 14px;
+}
+
+/*  Current Plan Card & Info */
+.PlansBilling-card {
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.PlansBilling-current-plan {
+    padding: 24px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PlansBilling-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.PlansBilling-title-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.PlansBilling-plan-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+}
+
+.PlansBilling-plan-desc {
+    color: #6b7280;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/*  Badges (Dashboard & Modal) */
+.PlansBilling-status-badge,
+.PlansBilling-badge {
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+}
+
+.PlansBilling-status-active,
+.PlansBilling-badge-active {
+    background-color: #dcfce7;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
+}
+
+.PlansBilling-status-cancelled {
+    background-color: #ffedd5;
+    color: #f97316;
+    border: 1px solid #fed7aa;
+}
+
+/* Pricing & Action Buttons */
+.PlansBilling-plan-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.PlansBilling-main-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.PlansBilling-per-month {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 400;
+}
+
+.PlansBilling-button-group {
+    display: flex;
+    gap: 12px;
+}
+
+.PlansBilling-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* .PlansBilling-btn-outline {
+    background: white;
+    border: 1px solid #d1d5db;
+    color: #374151;
+} */
+.PlansBilling-btn-primary {
+    background: #3b82f6;
+    color: white;
+    border: none;
+
+}
+
+.PlansBilling-btn-upgrade {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.PlansBilling-btn-primary:hover,
+.PlansBilling-btn-upgrade:hover {
+    background: #2563eb;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.PlansBilling-btn-outline {
+    background: white;
+    border: 1.5px solid #d1d5db;
+    color: #111827;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.PlansBilling-btn-upgrade:hover {
+    background: #2563eb;
+}
+
+.PlansBilling-btn-outline:hover {
+    background: #FFB6C1;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/*  Cancellation Modal */
+.PlansBilling-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.PlansBilling-modal-content {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.PlansBilling-modal-title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #111827;
+    text-align: left;
+}
+
+.PlansBilling-modal-info-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.PlansBilling-modal-label {
+    font-size: 12px;
+    color: #6b7280;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.PlansBilling-modal-plan-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.PlansBilling-modal-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.PlansBilling-modal-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.PlansBilling-modal-btn-grey {
+    flex: 1;
+    background: #111827;
+    color: white;
+    border: 1px solid #374151;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.PlansBilling-modal-btn-grey:hover {
+    background: #1f2937;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+.PlansBilling-modal-btn-confirm {
+    flex: 1;
+    background: #111827;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.PlansBilling-modal-btn-confirm:hover {
+    background: #ef4444;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Invoices & Payment */
+.PlansBilling-grid-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.PlansBilling-invoice-box {
+    padding: 24px;
+}
+
+.PlansBilling-section-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.PlansBilling-invoice-price {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.PlansBilling-detail-item {
+    display: flex;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.PlansBilling-detail-label {
+    width: 90px;
+    color: #666;
+}
+
+.PlansBilling-detail-value {
+    font-weight: 500;
+}
+
+.PlansBilling-payment-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PlansBilling-add-payment-btn {
+    background: none;
+    border: none;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #000;
+}
+
+/*  Billing History Section */
+.PlansBilling-history-box {
+    margin-top: 5px;
+    min-height: 400px;
+}
+
+.PlansBilling-history-header {
+    padding: 15px 30px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.PlansBilling-history-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.PlansBilling-view-history {
+    position: absolute;
+    right: 30px;
+    color: #4a86f7;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*  Navigation (Back Button for MembershipPlans) */
+.PlansBilling-btn-back {
+    background-color: transparent;
+    border: 1px solid #e2e8f0;
+    color: #64748b;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 20px;
+}
+
+.PlansBilling-btn-back:hover {
+    color: #3b82f6;
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    transform: translateX(-3px);
+}
+
+.PlansBilling-payment-box {
+    padding: 24px !important;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.Billing-Payment-Display {
+    width: 100%;
+}
+
+.Billing-Payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.Billing-Payment-title-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.Billing-brand-badge {
+    border: 1px solid #e5e7eb;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 800;
+    font-style: italic;
+    color: #1a1f71;
+    background: #fff;
+}
+
+/* Card Number */
+.Billing-card-number-large {
+    font-size: 26px;
+    font-weight: 800;
+    color: #000;
+    margin: 10px 0 25px 0;
+    letter-spacing: 1.5px;
+}
+
+.Billing-Payment-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.Billing-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.meta-row {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.meta-label {
+    color: #a4b1cd;
+    width: 100px;
+    font-weight: 500;
+}
+
+.meta-value {
+    color: #435181;
+    font-weight: 600;
+}
+
+.invoice-multiple-indicator {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: #f1f5f9;
+    color: #1557b0;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #cbd5e1;
+    transition: all 0.2s ease;
+}
+
+.invoice-mini-popup {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 110%;
+    right: 0;
+    width: 160px;
+    background: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 100;
+    transform: translateY(5px);
+    transition: all 0.2s ease;
+}
+
+.invoice-multiple-indicator:hover .invoice-mini-popup {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popup-title {
+    font-size: 9px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 2px;
+}
+
+.popup-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    padding: 4px 0;
+    color: #1e293b;
+}
+
+.popup-item strong {
+    color: #1557b0;
+}
+
+.invoice-cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+
+.invoice-id-text {
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 45px;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+    margin: 0;
+}
+
+
+.download-icon {
+    width: 24px; 
+    height: auto;
+    display: block; 
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.download-icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Buttons */
+.Billing-Payment-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.Billing-btn-change {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.Billing-btn-change:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.Billing-btn-delete-icon {
+    background: #fff;
+    border: 1.5px solid #ff4d4f;
+    padding: 9px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.Billing-btn-delete-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.Billing-btn-delete-icon:hover {
+    background: #fff1f0;
+    transform: scale(1.05);
+}
+
+.History-Table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+}
+
+.History-Table th {
+    text-align: left;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 15px 12px;
+    border-bottom: 1.5px solid #f1f5f9;
+    text-transform: uppercase;
+    width: 20%;
+}
+
+.History-Table td {
+    padding: 12px 10px;
+    font-size: 14px;
+    color: #1e293b;
+    border-bottom: 1px solid #f8fafc;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* text-align: center; */
+}
+
+.invoice-cell {
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 12px; 
+    min-width: 120px; 
+    text-align: left;
+}
+
+.status-pill {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    border: none;
+}
+
+.status-pill.active {
+       text-align: center;
+
+    background: #28A745;
+    border-radius: 9999px;
+    
+}
+
+.status-pill.expired {
+    text-align: center;
+     background: #DC3545;
+    border-radius: 9999px;
+}
+
+.status-pill.cancelled {
+    text-align: center;
+    background: #FD7E14;
+    border-radius: 9999px;
+}
+
+.status-pill.pending {
+    text-align: center;
+    background: #007BFF;
+    border-radius: 9999px;
+}
+.status-pill-on-hold{
+    text-align: center;
+    background: #FFC107;
+    border-radius: 9999px;
+}
+.status-pill.processing {
+    text-align: center;
+     background: #f99c74;
+    border-radius: 9999px;
+}
+
+.invoice-id {
+    color: #1557b0;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.file-icon {
+    width: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+
+/* Genareate pdf style */
+
+/* The Main Header Container */
+.invoice-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #002B55; /* The Deep Navy from your image */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/* The White Notched Area on the Left */
+.invoice-brand-section {
+    background-color: #ffffff;
+    height: 100%;
+    width: 65%; /* Controls how far the white goes */
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    /* This creates the diagonal "cut" */
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+/* The "job portal" Text Blue */
+.job-portal-logo {
+    color: #1557B0; /* Bright Blue from image */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* The "INVOICE" Text on the Navy Background */
+.invoice-label-section {
+    padding-right: 40px;
+}
+
+.invoice-text {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Meta Data Row (Invoice No & Date) */
+.invoice-meta-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #1557B0; /* Using the logo blue for meta labels */
+    font-weight: bold;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 20px;
+}
+
+/*  Responsive */
+@media (max-width: 768px) {
+    .PlansBilling-current-plan {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .PlansBilling-plan-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .PlansBilling-grid-row {
+        grid-template-columns: 1fr;
+    }
+}
