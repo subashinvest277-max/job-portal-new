@@ -13,7 +13,7 @@ pipeline {
         GIT_BRANCH = 'main'
 
         SSH_KEY = 'slave-id'
-
+    
         DEPLOY_USER = 'ubuntu'
         DEPLOY_HOST = '3.83.179.228'
 
