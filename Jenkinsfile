@@ -136,7 +136,7 @@ pipeline {
                             docker run -d \
                                 --restart unless-stopped \
                                 --name ${IMAGE_NAME} \
-                                -p 80:8000 \
+                                -p 80:80 \
                                 ${IMAGE_NAME}:latest
                         '
                     """
