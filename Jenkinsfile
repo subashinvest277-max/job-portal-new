@@ -15,7 +15,7 @@ pipeline {
         SSH_KEY = 'slave-id'
 
         DEPLOY_USER = 'ubuntu'
-        DEPLOY_HOST = 'YOUR-EC2-IP'
+        DEPLOY_HOST = '3.83.179.228'
 
         APP_DIR = '/home/ubuntu/job-portal-new/Job-Portal-Project-Dev'
 
