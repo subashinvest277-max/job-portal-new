@@ -56,7 +56,7 @@ COPY . .
 
 
 # Copy React production build
-COPY --from=frontend-builder /frontend/build /app/frontend/build
+COPY --from=frontend-builder /frontend/dist /app/frontend/build
 
 
 
