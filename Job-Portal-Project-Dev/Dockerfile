@@ -36,6 +36,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 
+
 COPY requirements.txt .
 
 
@@ -55,22 +56,28 @@ RUN pip install --no-cache-dir \
 COPY . .
 
 
-# Copy React production build
-COPY --from=frontend-builder /frontend/dist /app/frontend/build
+
+# React files to nginx
+COPY --from=frontend-builder /frontend/dist /usr/share/nginx/html
 
 
 
-# Nginx config
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+
+
+RUN rm -f /etc/nginx/sites-enabled/default
 
 
 
 EXPOSE 80
 
 
+
 COPY start.sh /start.sh
 
+
 RUN chmod +x /start.sh
+
 
 
 CMD ["/start.sh"]
