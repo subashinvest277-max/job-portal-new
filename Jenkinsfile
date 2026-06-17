@@ -229,7 +229,7 @@ pipeline {
 
     post {
         success {
-            echo '✅ Deployment Successful'
+            echo '✅ Deployment Successfully'
         }
 
         failure {
