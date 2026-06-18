@@ -1,3 +1,5 @@
+DOCKERFILE EXPLANATION
+======================
 # =========================
 # Stage 1 - React Build
 # =========================
@@ -14,17 +16,15 @@ COPY frontend/ .
 
 RUN npm run build
 
-
-
 # =========================
-# Stage 2 - Python + Nginx
+# Stage 2 - Django + Nginx
 # =========================
 
 FROM python:3.11-slim
 
-
 WORKDIR /app
 
+# Install Nginx and system dependencies
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -35,49 +35,47 @@ RUN apt-get update && \
     pkg-config && \
     rm -rf /var/lib/apt/lists/*
 
-
+# Install Python packages
 
 COPY requirements.txt .
-
-
 RUN pip install --upgrade pip
-
-
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Production packages
 
 RUN pip install --no-cache-dir \
     gunicorn \
     reportlab \
     razorpay
 
+# Copy Django project
 
+COPY . /app
 
-COPY . .
+# Copy React build to nginx web root
 
+COPY --from=frontend-builder \
+/frontend/dist \
+/var/www/html
 
+# Copy nginx configuration
 
-# React files to nginx
-COPY --from=frontend-builder /frontend/dist /usr/share/nginx/html
+COPY nginx/default.conf \
+/etc/nginx/sites-available/default
 
+# Remove default nginx conf if exists
 
+RUN rm -f /etc/nginx/conf.d/default.conf
 
-COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+# Copy start script
 
-
-RUN rm -f /etc/nginx/sites-enabled/default
-
-
-
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 EXPOSE 80
 
 
 
-COPY start.sh /start.sh
-
-
-RUN chmod +x /start.sh
-
 
 
 CMD ["/start.sh"]
+
